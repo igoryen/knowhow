@@ -1,0 +1,1 @@
+while read line; do mkdir -p "${line%/*}"; done < infile

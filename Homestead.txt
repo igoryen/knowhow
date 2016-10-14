@@ -1,0 +1,6 @@
+cd Homesead
+bash init.sh
+
+---
+edit Homestead.yaml
+bash init.sh

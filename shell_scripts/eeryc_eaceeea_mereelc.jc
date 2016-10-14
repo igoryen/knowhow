@@ -1,0 +1,77 @@
+All the effective_start_date fields were lost
+TOny made a script to restore them
+this is his description:
+
+
+
+tony [2:42 PM] 
+all effective start and end dates restored :simple_smile:
+
+igoryen [2:45 PM] 
+what can i say? “Teach me master"
+
+tony [2:49 PM] 
+lol just some clever regex
+
+​[2:49] 
+made it easy to construct 683 queries
+
+igoryen [2:51 PM] 
+i would love to take a look.
+
+new messages
+tony [2:52 PM] 
+pulled the data from image silo
+
+​[2:52] 
+pasted into text editor like
+
+​[2:52] 
+ ```
+OM76209D                08/01/2015  null
+OM76209U                08/01/2015  null
+OM76210D                08/01/2015  null
+OM76210U                08/01/2015  null
+[…]
+```
+
+​[2:52] 
+first column is pub no, 2nd is start date, 3rd is end date
+
+​[2:52] 
+replacing `^(OM.{5}[D|U])\s*([\w\d\/]*)\s*([\w\d\/]*)` with `UPDATE manuals SET effective_start_date="$2", effective_end_date="$3" WHERE publication_no="$1";`
+
+​[2:53] 
+gives
+
+​[2:53] 
+ ```UPDATE manuals SET effective_start_date="08/01/2015", effective_end_date="null" WHERE publication_no="OM76209D";
+UPDATE manuals SET effective_start_date="08/01/2015", effective_end_date="null" WHERE publication_no="OM76209U";
+UPDATE manuals SET effective_start_date="08/01/2015", effective_end_date="null" WHERE publication_no="OM76210D";
+UPDATE manuals SET effective_start_date="08/01/2015", effective_end_date="null" WHERE publication_no="OM76210U";
+UPDATE manuals SET effective_start_date="08/01/2015", effective_end_date="null" WHERE publication_no="OM76197D";
+[…]```
+
+​[2:53] 
+replacing `(\d{2})\/(\d{2})\/(\d{4})` with `$3-$1-$2 00:00:00`
+
+​[2:53] 
+gives
+
+​[2:53] 
+ ```UPDATE manuals SET effective_start_date="2015-08-01 00:00:00", effective_end_date="null" WHERE publication_no="OM76209D";
+UPDATE manuals SET effective_start_date="2015-08-01 00:00:00", effective_end_date="null" WHERE publication_no="OM76209U";
+UPDATE manuals SET effective_start_date="2015-08-01 00:00:00", effective_end_date="null" WHERE publication_no="OM76210D";
+UPDATE manuals SET effective_start_date="2015-08-01 00:00:00", effective_end_date="null" WHERE publication_no="OM76210U";
+UPDATE manuals SET effective_start_date="2015-08-01 00:00:00", effective_end_date="null" WHERE publication_no="OM76197D";
+[…]```
+
+​[2:54] 
+then feed them in using a pipe to sqlite
+
+​[2:54] 
+oh
+
+​[2:54] 
+and a global search and replace for `"null"` with `null`
+

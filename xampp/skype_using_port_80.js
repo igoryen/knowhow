@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/14073985/xampp-apache-server-is-not-starting-after-skype-installation

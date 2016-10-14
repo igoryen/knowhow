@@ -1,0 +1,1 @@
+http://askubuntu.com/questions/190004/how-to-uninstall-virtualbox-in-12-04
