@@ -17,4 +17,3 @@ vagrant box add laravel/homestead
 
 ---------------------
 install homestead
-=====================

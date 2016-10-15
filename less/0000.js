@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 --------------
 install node.js
 ==============
@@ -49,4 +50,3 @@ lessc main.less main.css
 
 ---------------------
 refresh the html page
-=====================

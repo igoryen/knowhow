@@ -10,4 +10,3 @@ function add_laravel_homestead_box() {
   echo "<br>";
   echo "<hr>";
 }
-
