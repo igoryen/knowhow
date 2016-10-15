@@ -1,0 +1,1 @@
+http://askubuntu.com/questions/426210/how-can-i-run-sublime-text-from-the-launcher-as-root-every-time
