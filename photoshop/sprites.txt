@@ -1,0 +1,9 @@
+cmd+a
+
+shift+cmd+c
+
+cmd+n
+
+​cmd+v
+
+and then save for web

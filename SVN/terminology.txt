@@ -1,0 +1,3 @@
+check in = push to master
+transmitting file data = push
+update to HEAD = pull main master
