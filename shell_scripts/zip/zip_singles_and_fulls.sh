@@ -1,5 +1,5 @@
 # all 4 steps WORK!
-echo "Running zip_psds.sh"
+echo "Running zip_singles_and_fulls.sh"
 # "-j" stands for -j is "junk the path". 
 # used to Store just the name of a saved file (junk the path), and do not store directory names. 
 # By default, zip will store the full path (relative to the current directory).
@@ -11,11 +11,11 @@ echo "......."
 
 
 
-FOLDER=13
-TICKET=1386
-TESTFOLDER=test2
-MODEL=460-l;
-YEAR=year_2017_5;
+FOLDER=14
+TICKET=1429
+TESTFOLDER=test
+MODEL=model_is-350-awd_;
+YEAR=year_2017_8;
 # FILE=*.zip;
 ACCBASE=~/Documents/ig/_mine/LEXADHUB/$FOLDER/$TICKET/$TESTFOLDER/$MODEL/$YEAR/view_*/color*/
 COLORACCBASE=~/Documents/ig/_mine/LEXADHUB/$FOLDER/$TICKET/$TESTFOLDER/$MODEL/$YEAR/view_*/color*/
@@ -40,7 +40,7 @@ then
 	for file in $COLORACCBASE/*.psd
 	do 
 		echo "zipping $file"
-		# zip -j "$file".zip "$file"
+		zip -j "$file".zip "$file"
 	done
 	echo "all .psd files in color folders have been zipped"
 
@@ -50,7 +50,7 @@ then
 	for file in $COLORACCBASE/*.tif
 	do 	
 		echo "zipping $file"
-		# zip -j "$file".zip "$file"
+		zip -j "$file".zip "$file"
 	done
 	echo "all .tif files in color folders have been zipped"
 
@@ -68,24 +68,24 @@ then
 	echo
 	read -p "Continue? (y|n) " -n 1 -r
 	# if user wants to run the whole script
-	# if [[ $REPLY =~ ^[Yy]$ ]]
-	# then
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
 
+		for file in $COLORACCBASE/*.psd
+		do
+			rm "${file%}"
+		done
+		echo
+		echo "All .psd files are removed"
 
-	# 	for file in $COLORACCBASE/*.psd
-	# 	do
-	# 		rm "${file%}"
-	# 	done
-
-	# 	echo "All .psd files are removed"
-
-	# 	for file in $COLORACCBASE/*.tif
-	# 	do
-	# 		rm "${file%}"
-	# 	done
-	# fi
-	echo
-	echo "All .tif files are removed"
+		for file in $COLORACCBASE/*.tif
+		do
+			rm "${file%}"
+		done
+		echo
+		echo "All .tif files are removed"
+	fi
+	
 fi
 
 

@@ -1,4 +1,8 @@
 
+
+
+// ============================================================
+
 File > Scripts > Image processor
 select the source folder
 select the target folder
@@ -8,13 +12,18 @@ quality 12
 
 
 ========================
-- open dir with psd files
+// CREATING the action
+
+- go to/open dir with psd files
 - open one file in PS
 - Window > Actions
-- below - click on folder image (set of actions)
-	- give a name to the set of Actions > OK
-- below click on file image (action)
-	- give a name to the action
+- at the bottom of the dialog box 
+	- click on the folder icon (set of actions)
+	- give a name to the new set of Actions e.g. "PSD to JPG"
+	- OK
+- at the bottom of the dialog box 
+	- click on file icon (action)
+	- give a name to the action e.g. "to 150 wide"
 	- click "Record"
 - File > Save for Web > 
 - create a folder "big"
@@ -24,23 +33,27 @@ quality 12
 - save the file
 - click "stop recording" image
 
+// REMOVE THE TRIAL FILE
 - go to the target dir
 - remove the file there
 
+//
 File > Automate > Batch
-choose the destination folder 
-set the extension for the new files
+- Destination: "Folder"
+- Choose: // select the target dir
+- set the extension for the new files
 	- e.g. "_big.jpg"
-destination: "Save and close"
-OK
+- OK
 
 files are automatically created
 
 =================================
 
 ---------------------------
+// USING the actions
 
-batch > 
+
+File > Automate > Batch > 
 	play
 		set: "PSD to JPG"
 		Action: "to 150 wide"
