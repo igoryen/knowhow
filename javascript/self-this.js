@@ -13,6 +13,39 @@ var o = {
 
 o.m();
 
+var singer = {
+	
+	song: "La la la!",
+	music: "Strum strum strum!",
+	talk: "Bla bla bla!",
+
+	doYourThing: function () {
+		var self = this;
+		console.log( "Singer will now do his thing:" );
+
+		sing(); // 6
+		play(); // 6
+		speak(); // 6
+
+
+		function sing () {
+			// console.log( this.song ); // 5
+			console.log( self.song );
+		}
+		function play () {
+			// console.log( this.music ); // 5
+			console.log( self.music );
+		}
+		function speak () {
+			// console.log( this.talk ); // 5
+			console.log( self.talk );
+		}
+	}
+};
+
+singer.doYourThing();
+
+
 /*
 1. `this` holds the invocation context of `m()`
 	`this` doesn't have a scope
@@ -28,4 +61,6 @@ o.m();
 	because this nested function is invoked as a function
 	and therefore its `this` value is either the global object or undefined. 
 4. true, because self is the value of the outer `this`
+5. returns "undefined"
+6. the method calls its nested function(s)
 */
