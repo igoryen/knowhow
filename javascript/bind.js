@@ -12,30 +12,30 @@ console.log(
 
 
 function greet ( name ) {
-	return this.greeting + name + "!";
+	return this.interjection + name + "!";
 }
 
-var obj = { greeting: "Hello "};
-var h = greet.bind( obj );
+var wordToSay = { interjection: "Hello "};
+var hi = greet.bind( wordToSay );
 console.log(
-	h( "Igor" ), h( "Jenica")
+	hi( "Igor" ), hi( "Jenica")
 );
 
 
 function endear( person ) {
-	return this.doItTo + person;
+	return this.thingToDo + " " + person + "!";
 }
-var smth = { doItTo: "Kiss " };
-var e = endear.bind( smth );
+var expression = { thingToDo: "Kiss" };
+var e = endear.bind( expression );
 console.log(
-	e("Jenica"), e( "Danny" ), e( "Joy" )
+	e( "Jenica" ), e( "Danny" ), e( "Joy" )
 );
 
 
 function careFor( thing ) {
-	return this.treat + thing + "!" ;
+	return this.tend + " your " + thing + "!" ;
 }
-var tendTo = { treat: "wash your "};
+var tendTo = { tend: "Wash"};
 var service = careFor.bind( tendTo );
 console.log(
 	service("hair"), service("car"), service("socks")
@@ -51,6 +51,23 @@ console.log (
 	praiseAs("the prettiest"), praiseAs( "the smartest" ), praiseAs( "the loveliest" )
 );
 
+function congratulateOn ( day ) {
+	return this.adj + " " + day + "!";
+}
+var adjToUse = { adj: "Happy" };
+var congrats = congratulateOn.bind( adjToUse );
+console.log(
+	congrats("New Year"), congrats("Hannukah"), congrats("Easter"), congrats( "Christmas" )
+);
+
+function criticize( adj ) {
+	return this.smb + " is a " + adj + "!";
+}
+var receiver = { smb: "Grinch"};
+var railAs = criticize.bind( receiver );
+console.log (
+	railAs("stinker"), railAs( "eel" ), railAs( "monster" )
+);
 
 /*
 1. invoke method `bind()` on function `f` passing it object `o`
