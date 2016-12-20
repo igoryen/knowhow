@@ -364,6 +364,9 @@ Step 6 — Set Up the Web Server
 
         // Create a backup of the current default website config.
         sudo mv 000-default.conf default-bkp.conf
+        // or make a copy of it
+        sudo cp 000-default.conf tarboz.conf
+
 
 
         // Create a new file to replace the old one.

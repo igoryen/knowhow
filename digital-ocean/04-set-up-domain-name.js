@@ -94,7 +94,7 @@ whois igoryen.com
 whois igoryen.com
 
 // the correct output
-	Domain Name: EXAMPLE.COM
+   Domain Name: EXAMPLE.COM
    Registrar: ENOM, INC.
    Whois Server: whois.enom.com
    Referral URL: http://www.enom.com
@@ -163,6 +163,7 @@ A @ 159.203.34.204
 // pointing a subdomain to an A record — 
 // if an A Record’s IP address changes, the CNAME will follow to the new address. 
 // How do I prepend "www" to my URL? 
+
 "Select Record Type" > "CNAME"
 "Enter Name": 		www
 "Enter IP Address": @

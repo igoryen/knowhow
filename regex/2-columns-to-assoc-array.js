@@ -1,9 +1,9 @@
 Convert this:
 
-Matthew	28
-Mark	16
-Luke	24
-John	21
+Matthew 28
+Mark    16
+Luke    24
+John    21
 
 To this:
 
