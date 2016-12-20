@@ -1,9 +1,12 @@
+
+
 // 2
-function getUserInput( firstName, lastName, gender, callback ) {
-    var fullName = firstName + " " + lastName;
+function getUserInput( user, callback ) {
+
+    var fullName = user.firstName + " " + user.lastName;
 
     if ( typeof callback === "function" ) { // 3
-	    callback( fullName, gender ); // 4
+	    callback( fullName, this.user.gender ); // 4
     }
 }
 //...................................................
@@ -33,14 +36,14 @@ function greetUser ( customerName, sex ) {
 
 //....................................................
 
-var p = {	
+var person = {	
 	fname: "Alan",
 	lname: "Rickman",
 	gender: "Man"	
 }
 
-getUserInput( p.fname, p.lname, p.gender, genericPoemMaker ); // 5
-getUserInput( p.fname, p.lname, p.gender, greetUser );
+getUserInput( person, genericPoemMaker ); // 5
+getUserInput( person, greetUser );
 
 
 /*
@@ -54,3 +57,4 @@ getUserInput( p.fname, p.lname, p.gender, greetUser );
 
 */
 
+416
