@@ -10,23 +10,241 @@
 /etc/ // config files for the bootloader and apps such as Apache server
 /etc/apache/conf/apache.conf // can be edited to set the web server location
 /etc/apache2/ // Apache 2.0 config files. the command to ensure apache2 is running: `ps aux | grep apache2`
-/etc/apache2/apache2.conf // Apache 2.0 config file, includes `/etc/apache2/httpd.conf`. Many of the configuration options can be changed here
-/etc/apache2/conf.d/  // dir. the best place to put your own custom configurations. Files in this directory are included as part of the “global” server configuration and will apply to all virtual hosts 
-/etc/apache2/httpd.conf // the main Apache config file
+/etc/apache2/apache2.conf 
+	/*
+	This Apache 2.0 config file.
+	It includes `/etc/apache2/httpd.conf`. 
+	Many of the configuration options can be changed here.
+
+	This is the main configuration file for the server. 
+	Almost all configuration can be done from within this file, although it is recommended to use separate, designated files for simplicity. 
+	This file will configure defaults and be the central point of access for the server to read configuration details.
+	...
+	This file holds the main config details for your Apache server.
+	This file is divided into three main sections: 
+		configuration for the global Apache server process, 
+		configuration for the default server, 
+		configuration of Virtual Hosts.
+
+	In Ubuntu and Debian, the majority of the file is for global definitions, 
+	and the configuration of the default server and virtual hosts is handled at the end, by using the "Include ..." directive.
+
+	The "Include" directive allows Apache to read other configuration files into the current file at the location that the statement appears. 
+	The result is that Apache dynamically generates an overarching configuration file on startup.
+
+	If you scroll to the bottom of the file, there are a number of different "Include" statements. 
+	These load module definitions, the ports.conf document, the specific configuration files in the "conf.d/" directory, 
+	and finally, the Virtual Host definitions in the "sites-enabled/" directory.
+
+	Global Configuration Section
+		This section is used to configure some options that control how Apache works as a whole.
+
+		There are some interesting options you may want to modify in this section:
+
+		Timeout
+			By default, this parameter is set to "300", which means that the server has a maximum of 300 seconds to fulfill each request.
+			This is probably too high for most set ups and can safely be dropped to something between 30 and 60 seconds.
+
+		KeepAlive
+			This option, if set to "On", will allow each connection to remain open to handle multiple requests from the same client.
+
+			If this is set to "Off", each request will have to establish a new connection, which can result in significant overhead depending on your setup and traffic situation.
+
+		MaxKeepAliveRequests
+			This controls how many separate request each connection will handle before dying. Keeping this number high will allow Apache to serve content to each client more effectively.
+			Setting this value to 0 will allow Apache to serve an unlimited amount of request for each connection.
+
+		KeepAliveTimeout
+			This setting specifies how long to wait for the next request after finishing the last one. If the timeout threshold is reached, then the connection will die.
+			This just means that the next time content is requested, the server will establish a new connection to handle the request for the content that make up the page the client is visiting.
+
+		MPM Configuration
+			The next section specifies the configuration of the MPM (Multi-Processing Module) options. You can cross-reference which section your Apache installation was compiled with by exiting into the terminal and typing:
+
+			apache2 -l
+			Compiled in modules:
+			  core.c
+			  mod_log_config.c
+			  mod_logio.c
+			  prefork.c
+			  http_core.c
+			  mod_so.c
+			As you can see, in this server, "prefork.c" is a module that was compiled in and is also in the "apache2.conf" file. Your installation may have multiple to choose from, but only one can be selected.
+
+			You can adjust the configuration of the prefork MPM in the appropriate section.
+
+	*/
+/etc/apache2/conf.d/
+	/*
+	This directory is the best place to put your own custom configurations. 
+	Files in this directory are included as part of the “global” server configuration and will apply to all virtual hosts.
+
+	This directory is used for controlling specific aspects of the Apache configuration. 
+	For example, it is often used to define SSL configuration and default security choices.
+	*/
+
+/etc/apache2/httpd.conf
+	/*
+	This is the main Apache config file.
+	httpd.conf is no longer used. 
+	It was previously used as the main configuration file (named after the httpd daemon) 
+	but in most distributions it's either empty or non-existent (as in Ubuntu 14.04+). 
+	Presumably, the contents of httpd.conf was moved to apache2.conf.
+	*/
+/etc/apache2/mods-~
+	/*
+	These directories are similar in function to the sites directories, but they define modules that can be optionally loaded instead.
+	*/
 /etc/apache2/mods-available/ // a non-standard dir
 /etc/apache2/mods-enabled/ // a non-standard dir
 /etc/apache2/mods-enabled/*.conf // must be uncommented and included into `/etc/apache2/apache2.conf`*/
 /etc/apache2/mods-enabled/*.load // must be uncommented and included into `/etc/apache2/apache2.conf`*/
 /etc/apache2/mods-enabled/dir.conf // Apache file. Has DirectoryIndex. sets which file types Apache 2 will serve by default: `DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm`
-/etc/apache2/ports.conf //  contains the Listen directives telling the Apache server what IP address and port to listen to 
-/etc/apache2/sites-available/ // config files (or symbolic links to them) of each web site (virtual host) served by your Apache server. each Virtual Host are managed like modules. No strict naming requirements for these files but for convenience you should name each site configuration file to match the domain name it is serving. There is no need to add a “conf” extension. For example, the vhost file used for this web site is named www.control-escape.com. To activate any of these sites, use the a2ensite command, which operates identically to the a2enmod command mentioned above. There is a respective a2dissite command for disabling a site.
-/etc/apache2/sites-available/000-default.conf // the settings for DocumentRoot: can change  `/var/www/html` to `/home/ss/www`
+
+/etc/apache2/ports.conf
+	/*
+	This file contains the Listen directives telling the Apache server what IP address and port to listen to.
+	
+	This file is used to specify the ports that virtual hosts should listen on. 
+	Be sure to check that this file is correct if you are configuring SSL.
+	*/
+
+// the 2 directories used for virtual hosts
+// directory 1 
+/etc/apache2/sites-available/ 
+	/* 
+	This directory contains config files (or symbolic links to them) of each web site (virtual host) served by your Apache server. 
+	Each Virtual Host is managed like modules. 
+	There is no strict naming requirements for these files but for convenience 
+	you should name each site configuration file to match the domain name it is serving. 
+	There is no need to add a “conf” extension. 
+	For example, the vhost file used for this web site is named www.control-escape.com. 
+	To activate any of these sites, use the 'a2ensite' command, which operates identically to the 'a2enmod' command. 
+	To disable a website use 'a2dissite' command.
+
+
+	You can have configurations for sites saved in this directory. 
+	...
+	This directory contains all of the virtual host files that define different web sites. 
+	These will establish which content gets served for which requests. 
+	These are available configurations, not active configurations.
+	*/
+/etc/apache2/sites-available/000-default.conf 
+	/*
+	Apache's default config file.
+	'.conf' extension is optional.
+
+	the settings for DocumentRoot: can change  `/var/www/html` to `/home/ss/www`
+	// to create a copy of the default config file
+	sudo cp /etc/apache2/sites-available/000-default.conf  /etc/apache2/sites-available/myproject.conf 
+	---------------------------------------------------
+	<VirtualHost *:80> // 1
+	    # The ServerName directive sets the request scheme, hostname and port that
+	    # the server uses to identify itself. This is used when creating
+	    # redirection URLs. In the context of virtual hosts, the ServerName
+	    # specifies what hostname must appear in the request's Host: header to
+	    # match this virtual host. For the default virtual host (this file) this
+	    # value is not decisive as it is used as a last resort host regardless.
+	    # However, you must set it for any further virtual host explicitly.
+	    #ServerName www.example.com
+
+	    ServerAdmin webmaster@localhost
+	    DocumentRoot /var/www
+
+	    # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+	    # error, crit, alert, emerg.
+	    # It is also possible to configure the loglevel for particular
+	    # modules, e.g.
+	    #LogLevel info ssl:warn
+
+	    ErrorLog ${APACHE_LOG_DIR}/error.log
+	    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	    # For most configuration files from conf-available/, which are
+	    # enabled or disabled at a global level, it is possible to
+	    # include a line for only one particular virtual host. For example the
+	    # following line enables the CGI configuration for this host only
+	    # after it has been globally disabled with "a2disconf".
+	    #Include conf-available/serve-cgi-bin.conf
+	</VirtualHost>
+	---------------------------------------------------
+	1. 80 is the standard http port. Any request is handled on port 80 by default.
+		This definition will be superceded/overridden by a more specific definition.
+
+	*/
 /etc/apache2/sites-available/examples.com.conf
-/etc/apache2/sites-enabled/ //
+	/*
+	The contents of a config file
+	--------------------------------------------------
+	<VirtualHost *:80>
+	    ServerName myproject.192.168.33.10.xip.io // 1
+
+	    DocumentRoot /var/www/myproject/public // 2
+
+	    <Directory /var/www/myproject/public>
+	        Options -Indexes +FollowSymLinks +MultiViews
+	        AllowOverride All // 3
+	        Require all granted
+	    </Directory>
+
+	    ErrorLog ${APACHE_LOG_DIR}/myproject-error.log // 4
+
+	    # Possible values include: debug, info, notice, warn, error, crit,
+	    # alert, emerg.
+	    LogLevel warn
+
+	    CustomLog ${APACHE_LOG_DIR}/myproject-access.log combined
+
+	</VirtualHost>
+	--------------------------------------------------
+	1. Apache, match this virtual host to this domain
+	2. Go here to get the web root files.
+	3. 'All' means 'allow .htaccess files in your virtual hosts'
+	4. Create log files specifically for your domain, so they don't get mixed in with traffic / errors from other sites running on the server.
+	*/
+/etc/apache2/sites-available/test.com.conf
+	/*
+	An example of a virtual host config file.
+	*/
+
+// directory 2
+/etc/apache2/sites-enabled/ 
+	/* 
+	This directory contains symlinks to `/etc/apache2/sites-available/`.
+	
+	Any file you add here will be read.
+	You can disable your website by removing the site's symlink from this directory.
+	
+	sudo a2ensite test.com.conf // to create here a symlink to `/etc/apache2/sites-available/test.com.conf`
+	sudo service apache2 reload // to reload apache config so it's aware of new virtual host enabled
+
+	sudo a2dissite test.com.conf // to remove symlink
+	sudo service apache2 reload // to reload apache config so it's aware of the virtual host disabled
+	...
+	This directory establishes which virtual host definitions are actually being used. 
+	Usually, this directory consists of symbolic links to files defined in the "sites-available" directory.
+
+	*/ 
 /etc/apache2/sites-enabled/000-default // default site file, has site specific settings
+
 /etc/apache2/vhosts/
+/etc/apache2/vhosts/igoryen_environment.conf
+/etc/apache2/vhosts/bearberry_environment.conf
 /etc/apache2/vhosts/lada_environment.conf // 
-/etc/hosts // file that sets the mapping of IP addresses to hostnames, resolving hostnames to IP addresses
+
+/etc/hosts
+	/* 
+	This file exists in every computer.
+	It tells your computer what server to use when you request a specific domain.
+	It sets the mapping of IP addresses to hostnames, resolving hostnames to IP addresses.
+	e.g.
+	127.0.0.1 dev.igoryen.com 
+	127.0.0.1 dev.bearberry.com
+	192.168.10.10 dev.homestead.app
+	This means:
+	"Server with IP address 127.0.0.1 is accessible by the hostname 'dev.igoryen.com'"
+	"127.0.0.1 is what 'dev.igoryen.com' is resolved to"
+	*/
 /etc/init.d/
 /etc/init.d/apache2
 /etc/init.d/httpd // the file that restarts your Apache server.  The command to restart your Apache server: `/etc/init.d/httpd restart`
