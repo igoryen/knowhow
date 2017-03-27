@@ -34,6 +34,5 @@ sudo systemctl restart apache2 // this one
 service apache2 reload // or this one?
 
 
-
 sudo vim /etc/hosts
 159.203.34.204 igoryen.com

@@ -3,7 +3,8 @@ https://www.digitalocean.com/community/questions/how-do-i-setup-subdomains-for-m
 // the latest Ubuntu on my droplet 
 // with LAMP 
 ------------------------------------------
-create
+log in via putty 
+
 (1) /var/www/tarboz/public_html/index.html // with content
 (2) /var/www/tarboz/index.php
 
@@ -23,13 +24,16 @@ In the Digital Ocean Control Panel
 sudo vim /etc/apache2/sites-available/igoryen.com.conf
 // or
 sudo vim /etc/apache2/sites-available/kiwi2.conf
+// or
+sudo vim /etc/apache2/sites-available/string01.conf
+
 
        
 <VirtualHost *:80>
     ServerAdmin admin@igoryen.com
-    ServerName harvesters.igoryen.com
+    ServerName string01.igoryen.com
     ServerAlias www.igoryen.com
-    DocumentRoot /var/www/morris/public
+    DocumentRoot /var/www/string01
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
@@ -39,3 +43,4 @@ sudo systemctl restart apache2
 ------------------------------------------
 http://tarboz.igoryen.com
 http://www.igoryen.com
+http://ccs.igoryen.com

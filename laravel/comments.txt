@@ -1,0 +1,30 @@
+1. to download the Laravel installer using Composer.
+    Takes a few seconds, less than a minute.
+
+2. Your PATH must have `~/.composer/vendor/bin`
+    so the laravel 'executable' is found when you run the 'laravel' command in your terminal.
+
+3. move to the directory where you want your hypothetical project 'aaa' to live
+
+4. To create a directory names 'aaa' containing a fresh Laravel installation with all dependencies installed. 
+
+5. This method of installation is much faster than installing via Composer.
+
+6. Install Composer first
+
+7. To install Laravel: to download and install a fresh copy of Laravel 
+    in a new 'aaa' folder within your current directory.
+
+8. To download a copy of the Laravel repository from GitHub into your 'aaa' project directory.
+
+9. To download and install the framework's dependencies.
+
+10. Typically, you may use a web server such as Apache or Nginx to serve your Laravel applications.
+
+11. The command to use if you are on PHP 5.4+ and would like to use PHP's built-in development server.
+
+12. By default the HTTP-server will listen to port 8000. 
+    However if that port is already in use or you wish to serve multiple applications this way, 
+    you might want to specify what port to use.
+
+13. You may need to grant the web server write permissions to the app/storage directories
