@@ -14,6 +14,8 @@ Installation
     
         Option 1
             composer create-project laravel/laravel aaa 4.2.* // 7
+            composer create-project laravel/laravel banana  // 14
+            
         Option 2
             https://github.com/laravel/docs/archive/4.2.zip // 8
             cd to the root of your project
