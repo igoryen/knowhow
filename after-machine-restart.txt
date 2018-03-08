@@ -1,0 +1,24 @@
+After a machine restart:
+
+# Email client
+	- Outlook
+
+# IDEs and Editors
+	- Eclipse
+	- Sublime Text
+
+# Browsers
+	- Chrome
+	- FireFox
+	- Opera
+	- Safari
+	- IE
+
+# Relay chats
+	- Hipchat
+
+# Windows explorer
+	- Free Commander
+
+# CLI
+	- Console (by Marko Bozikovic)

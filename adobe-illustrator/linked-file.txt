@@ -1,0 +1,13 @@
+Could not find the linked file. Choose Replace to select another file or Ignore to leave the link unchanged.
+
+Window > Links
+
+> Side bar/panel > tab Links > list of broken links > the desired link clk > Relink button (img of chain link) > Choose the file
+
+ 
+To import/embed an image into the ai file thereby increasing the file size:
+
+Side bar/panel > tab Links > sandwich in top-right corner > Embed image(s) > Watch the file size grow!
+
+
+https://www.designcontest.com/forum/adobe-illustrator/67995-help-ai-could-not-find-linked-file.html

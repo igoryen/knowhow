@@ -1,0 +1,9 @@
+1. Server > rck > Stop
+2. Server > rck > Clean
+3. Server > rck > Clean Tomcat work directory
+4. Server > rck > Start
+5. restart eclipse
+
+180105 
+1-5 didn't work
+1,2,3,4,5,1,2,3,4 didn't work

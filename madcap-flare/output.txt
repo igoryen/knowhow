@@ -1,0 +1,17 @@
+Madcap flare creates OUTPUTS (продукция).
+	
+	output = codebase
+
+	output/codebase types: 
+
+		Online format (e.g. html5)
+
+			will have to be uploaded to the file server.
+
+			html5 + top navigation = one output/codebase for 3 devices (desktop, tablet, phone) instead of 3 outputs/codebases
+
+		Print-based format (e.g. PDF)
+
+		Desktop output/codebase.
+
+		etc.

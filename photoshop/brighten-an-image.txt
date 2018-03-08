@@ -1,0 +1,10 @@
+Tab "Adjustments" > "Curves" 
+
+a. > "Auto"
+
+b. > Preset: "Lighter"
+
+c. > "Click and drag an image to modify the curve" (hand with finger pointing left) > click on center of forehead and drag upwards
+
+> Layer > Flatten image
+

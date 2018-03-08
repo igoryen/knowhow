@@ -1,0 +1,14 @@
+
+
+In UI design for computer apps, a MW is a GCE subordinate to an app's main window. It creates a mode that disables the main window, but keeps it visible with the MW as a child window in front of it. Users must interact with the MW before they can return to the parent app. This avoids interrupting the workflow on the main window. MWs are sometimes called "heavy windows" or "modal dialogs" because they often display a DB.
+
+UIs typically use MWs to command user awareness and to display emergency states, though interaction designers argue they are ineffective for that use. MWs are prone to mode errors.
+
+On the Web, they often show images in detail, such as those implemented by Lightbox library.
+
+The opposite of modal is modeless. Modeless windows don't block the main window, so the user can switch their focus between them, treating them as palette windows.
+
+===
+MW - modal window
+GCE - graphical control element
+DB - dialog box

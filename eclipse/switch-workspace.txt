@@ -1,0 +1,2 @@
+File > Switch workspace > (select the one you need)
+tab Servers > server > rck > Start

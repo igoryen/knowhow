@@ -1,0 +1,11 @@
+Copy > New layer > paste
+layer rck > Blending options
+	> Outer glow > 
+	> Structure > 
+		> Blend mode: Normal
+		> Opacity: 100%
+	> Elements 
+		> Technique: Precise
+		> Spread: 0%
+		> Size: 10px
+> OK

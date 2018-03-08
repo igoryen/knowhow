@@ -1,0 +1,17 @@
+B.E.M.
+blocks, elements, modifiers
+
+Block
+	Standalone entity that is meaningful on its own.
+	
+	header
+	container
+	menu
+	checkbox
+	input
+
+
+Element
+	A part of a block that has no standalone meaning and is semantically tied to its block.
+Modifier
+	A flag on a block or element. Use them to change appearance or behavior.

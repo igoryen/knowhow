@@ -1,0 +1,6 @@
+When is server restart necessary?
+
+Observation: 
+	application: JSP
+	JS framework: Angular1
+	Changing JS code takes effect only after server restart.

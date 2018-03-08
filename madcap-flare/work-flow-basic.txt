@@ -1,0 +1,43 @@
+I am learning the MFC workflow now as well, using http://help.madcapsoftware.com/flare2017r3/Content/Flare/Introduction/Home-Flare.htm 
+
+What I have got so far is this:
+
+Basic Workflow
+
+Step # 1 - File > New Project > New project >
+                Project name: “blabla”
+Project folder: C:\Users\flare\Documents\My Projects (not to be changed)
+
+Step # 2 - Next > Source > New from template > Factory Templates > Online & Print > “Top Navigation and PDF Advanced”
+
+Step # 3 - Next > Finish > see the created new project
+
+Step # 4 - Content Explorer > Content > make your edits
+
+Step # 5 - Project > Build Primary > (wait until the project finishes building by the progress bar at page bottom) > 
+
+Step # 6 - Desktop > My Projects – Shortcut > blabla > Ouput > flare > Online Output > HTML5 – Top Navigation 
+
+Step # 7 - Desktop > DUMP_HERE > delete all the files (Access Denied -> Continue) > 
+
+Step # 8 - Copy all the files from the folder opened in Step #6 into the folder opened in Step #7
+
+Step # 9 – Desktop > Open Chrome >  
+                If necessary do this: 
+-	Ctrl+Shift+R to clear the cache in the browser
+-	copy-paste this URL into the address bar: localhost/Default.htm
+
+Then you should see the online output in the web browser.
+
+
+
+The main part now is what to do in Step #4.
+
+Transfer files
+
+The simplest way to transfer files from your local computer (your own computer) to the remote computer when using the Remote Desk Connection is to just copy-pasting the file. Please see the screencast I attached.
+
+I would like to take a look at the body of information that will be put on the site to share my ideas about how to structure it and divide it.
+
+Thank you, and standing by for more questions,
+Igor

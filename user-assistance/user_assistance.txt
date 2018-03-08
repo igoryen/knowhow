@@ -1,0 +1,62 @@
+User assistance
+	a general term 
+	means: guided assistance to a user of a software product. 
+	The phrase incorporates all forms of help available to a user. 
+	Assistance can also automatically perform procedures or step users through the procedure, 
+	depending on the question that the user asked. 
+	The term is broader than online help, and includes procedural and tutorial information.
+
+Online help 
+	A form of user assistance.
+	It is topic-oriented, procedural or reference information delivered through computer software.  
+	Most online help is designed to give assistance in the use of a software application or operating system, 
+	but can also be used to present information on a broad range of subjects. 
+	When online help is linked to the state of the application (what the user is doing), 
+	it is called Context-sensitive help.
+
+	Online help has largely replaced live customer support. 
+	Before its availability, support could only be given through 
+	- printed documentation (limited), 
+	- mail (long wait) or 
+	- telephone (expensive).
+
+	When customers troubleshoot their own problems, quite often they can get to a solution by themselves, 
+	saving time and money for themselves and the company. 
+	More companies can afford this kind of help system, 
+	allowing them to compete with the large companies more effectively.
+
+Help authoring tool (HAT)
+	A Help Authoring Tool or HAT is a software program used by technical writers to create online help systems.
+	The basic functions of a HAT can be divided into the following categories:
+	- File input
+
+		HATs obtain their source text either by importing it from a file produced by another program, 
+		or by allowing the author to create the text within the tool by using an editor. 
+		File formats that can be imported vary from HAT to HAT. 
+		Acceptable file formats can include ASCII, HTML, OpenOffice Writer and Microsoft Word, 
+		and compiled Help formats such as Microsoft WinHelp and Microsoft Compressed HTML Help.
+	- Help output
+
+		The output from a HAT can be either a compiled Help file in a format such as WinHelp (*.HLP) 
+		or Microsoft Compiled HTML Help (*.CHM), 
+		or noncompiled file formats such as Adobe PDF, XML, HTML or JavaHelp.
+	- Auxiliary functions
+
+		Some HATs provide extra functions such as:
+
+		    - Automatic or assisted Index generation
+		    - Automatic Table of Contents
+		    - Spelling checker
+		    - Image editing
+		    - Image hotspot editing
+		    - Import and export of text in XML files, for exchange with computer-assisted translation programs
+
+MadCap Software 
+	An American computer software firm headquartered in San Diego, California.
+	It creates help authoring tools. 
+	MadCap's authoring tools are all based on xHTML.
+
+	- Products
+		- MadCap Flare
+			a CAT (content authoring tool)
+			it generates output in various formats, including HTML5, DotNet Help, Microsoft Compiled HTML Help, Microsoft Word, PDF, XPS, and WebHelp

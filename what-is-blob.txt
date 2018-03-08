@@ -1,0 +1,16 @@
+BLOB
+abbreviation of "Binary Large OBject"
+
+it is a collection of binary data
+when it is stored in a DMS (database management system)
+as a signle entity
+
+this binary data can be
+- image data
+- audio data
+- other multimedia data
+- even executable code
+
+Basically,
+before you store an image in the DMS
+you need to turn it into a BLOB.

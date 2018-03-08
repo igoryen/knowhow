@@ -1,0 +1,1 @@
+If Tab deletes text it may mean the dialog "buy Sublime Text" is hiding somewhere.

@@ -1,0 +1,23 @@
+fx > "Layer style"
+Stroke 
+	> Structure 
+		> Size: 3px
+		> Position: center
+	> Fill type: gradient
+		> Scale: 65%
+
+
+Bevel & Emboss
+	> Structure
+		> Style: Stroke Emboss
+		> Size: 5px
+
+	> Shading
+		> Gloss contour: up-down
+		> Anti-aliased: check
+
+	> Contour: check, highlight
+		> Elements
+			> Contour: down-up
+			> Anti-aliased: check
+			> Range: 17%

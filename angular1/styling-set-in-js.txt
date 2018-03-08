@@ -1,0 +1,30 @@
+popup dialogs
+the height and width are set in the style attribute
+Hypo1: the style values come from an angularJS file.
+	Where is that file?
+	Step 1: Find in folder: "style".
+	Step 2: Find in folder: "adverse" // part of the modal's id
+		Found the string in dialog.js
+		It sets: 
+		width: 800,
+		Hypo1: dialog.js is the file I need.
+		Action: editing (adding properties, editing property names).
+		Outcome: takes no effect.
+		Hypo1 must be wrong.
+
+	Intent: Cross file search for "adverse".
+	Finding: No other file but dialog.js.
+
+	Intent: return to dialog.js.
+
+	Idea: test the sensitivity by breaking the function (commenting out some code).
+	I do: the above, Eclipse refresh, page reload.
+	Result: no changes.
+
+	Hypo: Eclipse server restart is needed.
+	I do: server restart, page reload.
+	Result: took effect!
+		width: changed from 800px to 300px.
+		Wonder: why 300? Where is that set?
+
+

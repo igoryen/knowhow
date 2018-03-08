@@ -1,0 +1,23 @@
+Eclipse > File > New > Other 
+	> SVN (double click) > Project from SVN > Next 
+	> "checkout Project from SVN repository" > 
+	> Use existing repository location > URL: (use selected) > Next > 
+	> Revision: Head revision > Finish > 
+	> Check out as 
+		1) > Check out as a project configured using the New Project Wizard > Finish > 
+		>>-> 2) > Check out as a project with the name specified > "Steven" > Next > 
+
+		> Location > C:/Users/eric.parlier/workspace > Finish
+
+
+Eclipse Luna:
+
+	Eclipse > File > New > Other 
+	> SVN (double click) > Project from SVN > Next >
+	> URL: (add selected) > Next
+
+	> Revision: Head revision > Finish
+
+	Enter credentials
+	> Revision: Head revision > Finish > 
+

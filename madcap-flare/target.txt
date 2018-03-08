@@ -1,0 +1,40 @@
+Output/codebase types that Flare can produce
+	online ~ (e.g. HTML5)
+	print-based ~ (e.g. PDF and Word)
+
+Target is
+	one instance of an output type.
+	i.e. one codebase
+
+	the engine
+		it takes all of your files and settings
+		and brings them together to produce the end result. 
+
+		When you build your final output, 
+		you are essentially building one or more of the targets in your project.
+
+How to add targets?
+
+		In Flare you can add targets using any of the available formats, 
+		and you can make as many copies of an ex`isting target that you want. 
+
+		For example, 
+		your project might end up containing three targets that are all based on the output type (in addition to other targets).
+
+A target file has an .fltar extension and 
+is stored in the Project Organizer under the Targets folder. 
+
+Batch target
+
+	a batch file
+	it contains all the other target
+
+	helps compile the output for all the targets
+		you don't have to compile the output for each file separately
+	with a single button "Build only"
+
+	when done,
+	Project ribbon (on top) > "View primary" > see the outputs
+
+	each of the outputs has an individual look and feel.
+	

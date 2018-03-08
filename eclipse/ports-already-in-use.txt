@@ -1,0 +1,4 @@
+Starting a server has encountered a problem.
+Several ports required by Tomcat server are already in use.
+
+Solution: Eclipse restart.

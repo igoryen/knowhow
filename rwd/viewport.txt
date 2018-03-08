@@ -1,0 +1,22 @@
+The viewport is the user's visible area of a web page.
+
+The viewport varies with the device.
+The viewport is small on a mobile phone.
+The viewport is large on a computer screen.
+
+the web page is too large for the phone's viewport.
+the browser on the phone scales down the web page to fit it to the screen.
+
+Need: to take control of the viewports.
+
+Solution: tag <meta> (HTML5)
+
+1) tell the Webbrowser how to control the dimensions and scaling of the web page.
+2) set the width of the web page to follow screen-width of the device (a variable thing).
+3) set the initial zoom level when the page is firt loaded by the device's browser.
+
+   1                             2                    3
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
