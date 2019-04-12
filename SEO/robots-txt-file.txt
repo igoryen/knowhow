@@ -1,0 +1,9 @@
+the robots.txt 
+Used on your web server to manage your crawling budget
+it prevents crawling of infinite spaces such as search result pages. 
+
+robots.txt file must be up to date. 
+
+this file is not necessary
+
+

@@ -1,0 +1,45 @@
+What is a Template Tag? 
+
+A template tag is simply a piece of code 
+that tells WordPress to get something from the database. 
+
+It is broken up into three components:
+
+	A PHP code tag
+	A WordPress function
+	Optional parameters
+
+You can use a template tag to call another theme file or some information from the database.
+
+For example, 
+the template tag get_header() 
+tells WordPress to get the header.php file 
+and include it in the current theme file. 
+
+Similarly, 
+get_footer() 
+tells WordPress to get the footer.php file.
+
+There are also other kinds of template tags:
+
+the_title() – 
+	tells WordPress to 
+	get the title of the page or post from the database 
+	and include it.
+
+bloginfo( 'name' ) – 
+	tells WordPress to 
+	get the blog title out of the database 
+	and include it in the template file.
+
+If you look closely at the last example, 
+you will also see that there is a parameter between the parenthesis. 
+
+Parameters let you do two things:
+
+	ask for specific pieces of information and
+	format the information in a certain way.
+
+Parameters are covered extensively below, 
+but it’s useful to be aware that you can send WordPress-specific instructions 
+for how you want the data presented.

@@ -1,0 +1,13 @@
+Beyond Compare > 
+	> Session > New Session > Folder compare
+
+File explorer
+	> Workbench 11/INTL_UAT_LC/InternationalReport/1.0/Forms/DriveByForm_International.xdp
+	> drag-and-drop into Beyond Compare, panel 1
+
+File explorer
+	> {workbench-backup}/9-56-AM-3-25-2019/1.0/Forms/DriveByForm_International.xdp
+	> drag-and-drop into Beyond Compare, panel 2
+
+Beyond Compare
+	> do comparison > Next Section x n. > 

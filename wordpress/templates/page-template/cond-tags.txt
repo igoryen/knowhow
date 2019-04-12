@@ -1,0 +1,21 @@
+Using Conditional Tags in Page Templates
+
+You can make smaller, page-specific changes 
+with Conditional Tags 
+in your theme’s page.php file. 
+
+For instance, 
+the below example code loads the file "header-home.php" 
+for your front page, 
+but loads another file (header-about.php) 
+for your About page, 
+and then applies the default header.php for all other pages.
+
+
+if ( is_front_page() ) :
+    get_header( 'home' );
+elseif ( is_page( 'About' ) ) :
+    get_header( 'about' );
+else:
+    get_header();
+endif;

@@ -1,0 +1,3 @@
+https://developer.wordpress.org/themes/basics/template-files/
+
+Template files are used throughout WordPress themes, but first let’s learn about the terminology.

@@ -1,0 +1,8 @@
+Custom Site Front Page Template
+
+To create a custom site front page template, 
+include either of the following in the Theme:
+
+front-page.php
+A Custom Page Template 
+(e.g. template-featured.php for featured content)

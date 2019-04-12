@@ -1,0 +1,39 @@
+
+----------------------
+if no news at all
+	show "Sorry"
+if multiple past years
+	open the most recent
+	close the rest
+if single past year
+	open it
+if current year
+	open it
+if current year and multiple OR single past years
+	open the current year
+	close all the past years
+
+
+................................
+C = current year
+P = past year
+Z = output
+
+OR gate
+
+C P |Z
+-----
+0 0 |0
+0 1 |1
+1 0 |1
+1 1 |1
+
+
+if !C && !P
+	show "Sorry"
+if !C && P
+	show 
+if C && !P
+if C && P
+
+

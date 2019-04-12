@@ -1,0 +1,23 @@
+Home Page display 
+
+By default, 
+WordPress sets your site’s home page 
+to display your latest blog posts. 
+
+This page is called the "blog posts index". 
+You can also set your blog posts to display on a separate static page. 
+
+The template file home.php is used 
+to render the blog posts index, 
+whether it is being used as the front page 
+or on separate static page. 
+
+If home.php does not exist, 
+WordPress will use index.php.
+
+home.php
+index.php
+
+Note: 
+If front-page.php exists, 
+it will override the home.php template.

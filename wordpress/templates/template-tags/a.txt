@@ -1,0 +1,13 @@
+Template tags 
+are used within themes 
+to retrieve content from your database. 
+The content could be anything 
+from a blog title 
+to a complete sidebar. 
+
+Template tags are the preferred method 
+to pull content into your theme because:
+
+they can print dynamic content;
+they can be used in multiple theme files; and
+they separate the theme into smaller, more understandable, sections.

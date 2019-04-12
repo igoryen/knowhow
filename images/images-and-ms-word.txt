@@ -1,0 +1,45 @@
+https://www.pcworld.com/article/3153419/software/why-extracting-images-from-word-is-so-hard-with-3-decent-workarounds.html
+
+Word compresses images
+	to save memory and keep file sizes small.
+
+Image Quality falls when copy and pasting.
+
+Original image:
+	Resolution: 300 dpi
+	File Size: > 6.85MB
+	Dimensions: 8.16 x 10.88 inches
+
+1. Save as Picture
+	Resolution: 300 dpi
+	File Size: > 1.36MB
+	Dimensions: 5.983 x 7.98 inches
+
+2. File > Save As > Web Page:
+
+	image001.jpg // large
+		Resolution: 300 dpi
+		File Size: 1,722KB
+		Dimensions: 5.983 x 7.98 inches. 
+
+	image002.jpg // thumbnail
+
+3. Rename .docx to .zip
+	Resolution: 300 dpi
+	File Size: > 2.43MB
+	Dimensions: 4.763 x 6.35 inches
+
+
+=============================
+181004
+
+	
+		Dimensions: 768 x 514 px
+		Size: 734 KB
+		Bit depth: 32
+	Insert into Word
+
+	After save as picture
+		Dimensions: 768 x 514 px
+		Size: 768 KB
+		Bit depth: 32

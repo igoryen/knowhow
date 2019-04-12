@@ -1,0 +1,16 @@
+#1 
+// not sure if this is the right thing to do
+My sites > Network Admin > Settings
+	> Registration Settings > User accounts may be registered: check > 
+
+#2
+
+
+My Sites > Network Admin > Sites
+	> Select the sites to allow a user to edit
+
+
+My Sites > Network Admin > Users >
+	> Add New > 
+		Username:
+		Email: 

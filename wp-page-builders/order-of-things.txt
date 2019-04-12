@@ -1,0 +1,85 @@
+
+# I created an empty theme
+	with the minimum set of files
+		style.css
+		index.php
+
+# I activated the theme
+	My Sites > ... > Network Activate
+
+# I create a page
+	Pages > Add New > "November Twenty One"
+
+# I publish the page
+	Publish
+
+# I click on "Edit with Elementor"
+	it keeps loading forever
+
+# I add header and footer
+	create header.php
+		add html
+	create footer.php
+		add html
+# I refresh the page in WP dashboard
+
+# I click on "Edit with Elementor"
+	keeps loading forever
+
+# I create page
+	page-novembertwentyone.php
+	<?php get_header(); ?>
+		<h1>Hello World!</h1>
+	<?php get_footer(); ?>
+
+# I click on "Edit with Elementor"
+	keeps loading forever
+	Does the Elementor only work with some theme???
+
+# Went to XAMPP panel and restarted Apache and MySQL
+
+# I click on "Edit with Elementor"
+	keeps loading forever
+
+# Pages > New > Add New Page > "Nov 21 1048" > Publish
+
+# I click on "Edit with Elementor"
+	keeps loading forever
+
+# Research > Looks like a theme must be integrated to work with Elementor
+	https://www.wpcrafter.com/make-wordpress-theme-compatible-elementor/
+
+# My Sites > Network Admin > Plugins > Add New > Search plugins... > "Fullwidth Templates for Any Theme & Page Builder by Brainstorm Force" > Install Now
+	> Plugins > Fullwidth Page Templates > Network Activate
+# My Sites > {my subsite} > Dashboard > Asks me to log in!!!
+	> I enter my superadmin password > It won't let me in!!!
+	> I go to enter into the main site > Use the creds saved by the browser > It lets me in > I am in the Multisite Dashboard
+	> My Sites > {subsite} > Dashboard > I am in the Dashboard
+	> Pages > All pages > I'm in the pages
+	> I see "Nov 21 1048 — Elementor" > I click on it > the page opens
+	> I click "Edit with Elementor" > keeps loading forever
+	> Go back to the page
+	> Appearance > Themes > I'm in themes
+	> Plugins > I'm in plugins 
+		> "Fullwidth Page Templates" - "Network Active"
+	> Pages > All pages > "Nov 21 1048 — Elementor" > I'm in the page
+	> I click "Edit with Elementor" > keeps loading forever
+	GUESS: I have 
+		- Elementor plugin, 
+		- Make-any-theme-work-with-Elementor plugin 
+		But I don't have a theme
+	Question:
+		What should be the theme like?
+
+	OVERLOOKED!!!
+	Go back to the page > Page attributes > Template > 
+		> "Elementor Full Width" > Update > Click "Edit with Elementor" > keeps loading forever
+		> "Full Width" > Update > Click "Edit with Elementor" > keeps loading forever
+
+	themes > {my theme} > add file 
+		page-nov-21-1048.php
+		<?php get_header(); ?>
+			<h1>Hello Nov 21 10:48!</h1>
+		<?php get_footer(); ?>
+
+	Page > Click "Edit with Elementor" > keeps loading forever

@@ -1,0 +1,32 @@
+How to add Navigation menu?
+
+
+themes/fred/functions.php
+
+//--------------------------------
+//	METHOD 1.
+// Doesn't work because...
+//--------------------------------
+add at the bottom:
+
+	function fred_theme_setup() {
+	  register_nav_menus( array( 
+	    'header' => 'Header menu', 
+	    'footer' => 'Footer menu' 
+	  ) );
+	 }
+
+	add_action( 'after_setup_theme', 'fred_theme_setup' );
+
+
+
+Dashboard > Appearance > Menus > Menu name: "Top Menu" > Create menu
+Menu Settings > Auto add pages > check
+Display location > Heder menu > check
+> Save menu
+
+//----------------------------------
+//	METHOD 2.
+//----------------------------------
+
+https://codex.wordpress.org/Navigation_Menus

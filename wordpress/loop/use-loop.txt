@@ -1,0 +1,39 @@
+Using the Loop
+
+The Loop should be placed 
+in the Theme's index.php 
+and 
+in any other Templates used to display post information.
+
+Be sure to include the call for the header template 
+at the top of your Theme's templates. 
+
+If you are using The Loop inside your own design 
+(and your own design is not a template), 
+set WP_USE_THEMES to false:
+
+ <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
+
+The loop starts here:
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+and ends here:
+
+<?php endwhile; else : ?>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+
+This is using PHP's alternative syntax for control structures, 
+and could also be expressed as:
+
+<?php 
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); 
+		//
+		// Post Content here
+		//
+	} // end while
+} // end if
+?>

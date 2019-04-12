@@ -1,0 +1,40 @@
+How to Use Template Tags 
+
+Using template tags is very simple. 
+In any template file 
+you can use a template tag 
+by simply printing one line of php code to call the template tag. 
+
+Printing the header.php file is as simple as:
+
+get_header();
+
+
+
+
+
+
+Parameters 
+
+Some template tags let you pass parameters. 
+Parameters are extra pieces of information 
+that determine what is retrieved from the database.
+
+For example, 
+the bloginfo() template tag 
+allows you to give it a parameter telling WordPress the specific piece of information you want. 
+To print the blog name, 
+you just pass along the parameter “name,” like so:
+
+
+bloginfo( 'name' );
+
+To print the version of WordPress that the blog is running on, 
+you would pass a parameter of “version”:
+
+bloginfo( 'version' );
+
+For each template tag, the parameters differ. 
+A list of the parameters and what they can do can be found 
+on specific template tag pages located throughout the code reference.
+

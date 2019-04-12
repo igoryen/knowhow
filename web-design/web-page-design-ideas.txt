@@ -1,0 +1,38 @@
+header
+	1 white semi-opaque, fixed
+	2 white, not-fixed
+	3 white, fixed, bottom shadow
+	4 two-part
+
+page background 
+	1 white
+	2 darker
+	3 sightly darker
+
+sections layout
+	1 horizontal and vertical
+	2 -//-
+	3 vertical
+
+	
+page sections color
+	1 transparent
+	2 white, look like sheets of paper on desktop, no box shadow
+	3 -//-
+
+page sections divider
+	1 stylized line
+	2 space
+	3 -//-
+
+
+Paragraph divider
+	1 stylized wiggle
+	2 space
+	3 -//-
+
+footer
+	1 darker, background reflects the styling of dividers
+	2 darkest, matte
+	3 white
+

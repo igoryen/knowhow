@@ -1,0 +1,46 @@
+Configuration of front-page.php
+
+If it exists, 
+the front-page.php template file 
+is used on the site's front page 
+regardless of whether 'Settings > Reading ->Front page displays' is set to "A static page" or "Your latest posts," 
+the Theme will need to account for both options, 
+so that the site front page will display 
+either a static page or the blog posts index. 
+There are a few methods to do so.
+
+
+
+
+Conditional display within front-page.php
+
+One way to allow front-page.php to account for both options for 'Settings > Reading ->Front page displays' 
+is to add a conditional inside of front-page.php itself, 
+using get_option( 'show_on_front' ), get_home_template(), and get_page_template().
+
+Method 1: including custom content directly within front-page.php:
+
+if ( 'posts' == get_option( 'show_on_front' ) ) {
+    include( get_home_template() );
+} else {
+    // Custom content markup goes here
+}
+Method 2: including any page template:
+
+if ( 'posts' == get_option( 'show_on_front' ) ) {
+    include( get_home_template() );
+} else {
+    include( get_page_template() );
+}
+
+
+
+Filtering frontpage_template
+
+Another way to allow the site front page to display either a static page/custom content or the blog posts index, without adding conditional code within front-page.php, is to filter frontpage_template, by adding a filter callback to functions.php:
+
+function themeslug_filter_front_page_template( $template ) {
+    return is_home() ? '' : $template;
+}
+add_filter( 'frontpage_template', 'themeslug_filter_front_page_template' );
+This method causes WordPress to bypass the front-page.php template file altogether when the blog posts index is being displayed.

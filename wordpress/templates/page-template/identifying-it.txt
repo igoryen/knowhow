@@ -1,0 +1,32 @@
+Identifying a Page Template 
+
+If your template uses the body_class() function, 
+WordPress will print classes in the body tag for the post type class name (page), 
+the page’s ID (page-id-{ID}), 
+and the page template used. 
+
+For the default page.php, 
+the class name generated is page-template-default:
+
+<body class="page page-id-6 page-template-default">
+
+Note: 
+A specialized template (page-{slug}.php or page-{ID}.php) 
+also gets the page-template-default class 
+rather than its own body class.
+
+When using a custom page template, 
+the class page-template will print, 
+along with a class naming the specific template. 
+For example, 
+if your custom page template file is named as follows:
+
+<?php
+/* Template Name: My Custom Page */
+?>
+Then then rendered HTML generated will be as follows:
+
+<body class="page page-id-6 page-template page-template-my-custom-page-php">
+
+Notice the page-template-my-custom-page-php class 
+that is applied to the body tag.

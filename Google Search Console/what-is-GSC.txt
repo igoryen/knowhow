@@ -1,0 +1,60 @@
+What is Search Console?
+Want to get found on the web? We can help.
+
+Google Search Console is a free service 
+It's offered by Google.
+It helps you monitor and maintain your site's presence in Google Search results. 
+You don't have to sign up for Search Console for your site to be included in Google's search results.
+However, doing so can help you 
+	- understand how Google views your site and 
+	- optimize its performance in search results.
+
+
+Why use Search Console?
+Monitor your site's performance in Google Search results:
+
+- Make sure that Google can access your content
+- Submit new content for crawling and remove content you don't want shown in search results
+- Create and monitor content that delivers visually engaging search results
+- Maintain your site with minimal disruption to search performance
+- Monitor and resolve malware or spam issues so your site stays clean
+Discover how Google Search—and the world—sees your site:
+
+Which queries caused your site to appear in search results?
+Did some queries result in more traffic to your site than others?
+Are your product prices, company contact info, or events highlighted in rich search results?
+- Which sites are linking to your website?
+- Is your mobile site performing well for visitors searching on mobile?
+- Who should use Search Console?
+- Anyone with a website! From generalist to specialist, from newbie to advanced, Search Console can help you.
+
+Business owner who delegates.  
+Even if you don't think you know how to use Search Console, you should be aware of it and become familiar with the basics. 
+You might hire your webmaster or a marketing specialist to help you set up your website with Search Console. 
+In that case, you can work with that person to ensure you have access and control to all of the reports for your website. 
+In addition, it's a good idea to learn all you can about how your site is performing in search results 
+so you can make important business decisions about your site.
+ 
+SEO specialist or marketer. 
+As someone focused on online marketing, Search Console will help you monitor your website traffic, optimize your ranking, 
+and make informed decisions about the appearance of your site's search results. 
+You can use the information in Search Console to influence technical decisions for the website 
+and do sophisticated marketing analysis in conjunction with other Google tools like Analytics, Google Trends, and Google Ads.
+ 
+Site Administrator. 
+As a site admin, you care about the healthy operation of your site. 
+Search Console lets you easily monitor and in some cases resolve server errors, 
+site load issues, 
+and security issues like hacking and malware. 
+You can also use it to ensure any site maintenance or adjustments you make happen smoothly with respect to search performance.
+ 
+Web Developer. 
+If you are creating the actual markup and/or code for your site, 
+Search Console helps you monitor and resolve common issues with markup, 
+such as errors in structured data.
+ 
+App Developer. 
+If you own an app, 
+you want to see how mobile users find your app using Google Search. 
+Search Console can help you integrate your app seamlessly with with the website world. 
+Learn more.

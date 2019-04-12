@@ -1,0 +1,16 @@
+WordPress comes with a URMS
+user role management system 
+
+URMS defines what a specific user can and cannot do on your website. 
+Knowing these user roles and permissions are essential as your WordPress site grows. 
+
+Out of the box when you install WordPress, there are five default user roles:
+
+- Administrator
+	same as the super-user
+- Editor
+	can't do back-end
+- Author
+	edit and update pages
+- Contributor
+- Subscriber

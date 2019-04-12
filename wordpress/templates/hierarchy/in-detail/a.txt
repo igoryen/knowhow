@@ -1,0 +1,6 @@
+The Template Hierarchy In Detail 
+
+While the template hierarchy is easier to understand as a diagram, 
+the following sections describe the order 
+in which template files are called by WordPress for a number of query types.
+

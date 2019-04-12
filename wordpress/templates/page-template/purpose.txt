@@ -1,0 +1,52 @@
+Page Templates Purpose & User Control 
+
+If you plan on making a custom page template for your theme, 
+you should decide a couple of things before proceeding:
+
+Whether the page template will be for one specific page or for any page; 
+and
+What type of user control you want available for the template.
+
+Every page template that has a template name 
+can be selected by a user 
+when they create or edit a page. 
+The list of available templates can be found at 
+Pages > Add New > Attributes > Template. 
+
+Therefore, a WordPress user can choose any page template with a template name, 
+which might not be your intention.
+
+For example, 
+if you want to have a specific template for your “About” page, 
+it might not be appropriate to name that page template “About Template” 
+as it would be globally available to all pages (i.e. the user could apply it to any page). 
+
+Instead, 
+create a single use template 
+and WordPress will render the page with the appropriate template, 
+whenever a user visits the “About” page.
+
+Conversely, 
+many themes include the ability to choose 
+how many columns a page will have. 
+
+Each of these options is a page template 
+that is available globally. 
+To give your WordPress users this global option, 
+you will need to create page templates for each option 
+and give each a template name.
+
+Dictating 
+whether a template is for global use vs. singular use 
+is achieved by the way the file is named 
+and whether or not is has a specific comment.
+
+Note: 
+Sometimes it is appropriate to have a template globally available 
+even if it appears to be a single use case. 
+When you’re creating themes for release, 
+it can be hard to predict what a user will name their pages. 
+Portfolio pages are a great example 
+as not every WordPress user will name their portfolio the same thing 
+or have the same page ID 
+and yet they may want to use that template.

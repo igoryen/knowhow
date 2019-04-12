@@ -1,0 +1,16 @@
+Custom Blog Posts Index Page Template
+
+To create a custom blog posts index template, 
+include the following in the Theme:
+
+home.php
+
+Use only the home.php template file 
+for the blog posts index. 
+
+Do not use a Custom Page Template (such as template-blog.php) for two reasons:
+
+When the static front page feature is configured properly, 
+WordPress will not use a Custom Page Template to display the blog posts index, 
+even if a Custom Page Template is assigned to the page designated as the "Posts page". WordPress will only use either home.php or index.php.
+When the Custom Page Template is assigned to a static page other than the one designated as the "Posts page," the blog posts index loop pagination will not work properly.

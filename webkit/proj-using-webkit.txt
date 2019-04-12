@@ -1,0 +1,21 @@
+
+project not using SASS
+
+	src/css (A)
+		the location of css files
+
+
+project after installing SASS
+
+	src/scss (B)
+		location of *.scss files
+
+Example changes:
+
+# create B file e.g. index.scss
+# src/index.js > edit
+	import './css/index.css'; // <-- delete this line
+	import './scss/index.scss';
+# src/index.html > edit
+	<link type="text/css" rel="stylesheet" href="index.css" /> // <--- delete this line
+

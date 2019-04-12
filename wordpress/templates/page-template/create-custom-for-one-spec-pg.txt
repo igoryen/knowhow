@@ -1,0 +1,22 @@
+Creating a Custom Page Template for One Specific Page 
+
+As mentioned in the Template Hierarchy page, 
+you can create a template for a specific page.  
+
+To create a template for one specific page, 
+copy your existing page.php file 
+and rename it with your page’s slug or ID:
+
+page-{slug}.php
+page-{ID}.php
+
+For example: 
+Your About page has a slug of ‘about’ and an ID of 6. 
+If your active theme’s folder has a file named "page-about.php" or "page-6.php", 
+then WordPress will automatically find and use that file 
+to render the About page.
+
+To be used, 
+specialized page templates 
+must be in your theme’s folder 
+(i.e. /wp-content/themes/my-theme-name/ ).

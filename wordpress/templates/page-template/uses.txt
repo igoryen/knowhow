@@ -1,0 +1,21 @@
+Uses for Page Templates #Uses for Page Templates
+
+Page templates display your site’s dynamic content on a page, 
+e.g., posts, news updates, calendar events, media files, etc. 
+
+You may decide that you want your homepage to look a specific way, 
+that is quite different to other parts of your site. 
+
+Or, you may want to display a featured image 
+that links to a post on one part of the page, 
+have a list of latest posts elsewhere, and use a custom navigation. 
+You can use page templates to achieve these things.
+
+This section shows you how to build page templates that can be selected by your users through their admin screens.
+
+For example, you can build page templates for:
+
+full-width, one-column
+two-column with a sidebar on the right
+two-column with a sidebar on the left
+three-column
