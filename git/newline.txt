@@ -1,0 +1,33 @@
+https://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf
+-----------------
+Newline
+|| line ending
+|| end of line (EOL) 
+
+this is a (sequence of) control character(s) aka non-printing character(s)
+
+there's a close association between
+line feed (LF)
+and
+carriage return (CR)
+
+CR says 
+"move the position of the cursor to the first position on the same line"
+
+LF says
+"move to the next line"
+
+so CRLF says 
+"move the position of the cursor to the first position on the same line"
++
+"move to the next line"
+= "start a new line"
+
+
+Unix says LF
+MS Windows says CR LF
+
+When Git says
+"Warning: LF will be replaced by CRLF"
+it means
+"I will replace Unix newlines with MS Windows newlines"

@@ -1,0 +1,21 @@
+Elementor Forms:
+
+features regarding emails
+
+Our Marketing Dept. would like to obtain statistics re: the emails submitted from our website.
+
+In view of the above, I would like to learn how to do the following (as is described at https://elementorforms.com/):
+
+#1 Save Entries to Database
+Save form submission to wordpress database where you can easily view and export data as CSV.
+
+#2 Multi File Uploads
+With Elementor Forms you can upload multiple files and they will be stored in database and will also be sent to the e-mail as attachment.
+
+#3 Google Sheets
+It is super easy to submit your form entries to google sheets, you can specify which fields to include.
+
+Your help will be appreciated!
+
+
+
