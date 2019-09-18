@@ -9,6 +9,7 @@ https://www.codementor.io/php/tutorial/how-to-install-laravel-5-xampp-windows
 		127.0.0.1 		site8
 		
 	c:\xampp\apache\conf\extra\httpd-vhosts.conf
+	
 		<VirtualHost *:80>
 		    DocumentRoot "C:\aaa\ig\eggfruit_mvc\public"
 		    ServerName site8
