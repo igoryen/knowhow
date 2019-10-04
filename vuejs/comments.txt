@@ -3,8 +3,8 @@
 3. components (Have the 3 parts (<template> (DOM), <script>, <style>).
 4. DOM elements that are in every page. Have the 3 parts (<template>, <script>, <style>).
 5. This is part of the PHP app. Webpack will not touch them.
-6. "assets" folder. Holds all the generated files: all the minimized script and style sheet and all images copied from src/images
-7. only images used by the bundle
+6. "assets" folder. Holds all the generated files, i.e. the generated bundle: all the minimized script and style sheet and all images copied from src/images
+7. only images used by the bundle are placed here.
 8. the webpack configuration file. It is placed here so as not to clutter the root folder of the app.
 9. do not deploy these to the prod server.
 10. can be replaced with SASS
@@ -26,7 +26,7 @@
 26. Webpack, this is how to resolve paths when importing files.
 27. file extensions which can be omitted.
 28. The alias option is very powerful, but one particularly useful trick is defining @ as the alias of the "src/" folder. This way you don’t have to use relative paths with lots of "../."
-29. This is where our assets will be served. This URL (http://localhost:8080/js/main.js) will be The URL of our script. Port 8080 is default number for the webpack dev server. 
+29. This path is where our assets will be served. This URL (http://localhost:8080/js/main.js) will be the URL of our script. Port 8080 is default number for the webpack dev server. 
 30. disable content base, i.e. only serve the files that are part of our bundle. Everything else will be served by Apache or IIS.
 31. enable hot module replacement. It allows you to see your changes immediately without refreshing the page.
 32. value must be '*'. This is necessary because our PHP application is running on a different port than the webpack development server. Without it, the browser would block the AJAX requests which fetch the updated scripts.
@@ -57,3 +57,15 @@
 58. MyLibrary is the name of the global variable. This will let you use your Vue.js components wherever you need, just like you would use jQuery components.
 
 https://codeburst.io/using-vue-js-components-in-php-applications-e5bfde8763bc
+
+
+59. build.js. This is the build JS application. The only file (a bundle) that gets served to the client??? This file is built by webpack. Where is /dist/??? It is created in memory when in dev mode. It is visible when in the prod mode. It is the bundle containing all the .vue files, bundled into a single file for compactness.
+60. .vue files. Get converted into JS files. Has <template>, <script>, <style>. After it gets converted into JS files, it is passed to h() in the main.js
+61. index.js. The file with the html portion. It is the file that actually gets served. Pulls in the included built bundle (собранный пакет) from /dist/. What if I have vue instance A for page A of the existing PHP app, vue instance B for page B of the app, vue instance C for page C.  What does build.js contain? The js code for the templates used for all the pages of the app that use VueJS templates? Is it possible to ensure that page A has the built bundle with vue instance A, and page B has the bundle for vue instance B etc.? --- Is index.js necessary? Can I direct VueJS to different parts of the PHP application that have the ids? --- If I can do that, does that mean I would have to reference the /dist/build.js on every one of those pages?
+62. main.js. Here you import Vuejs, create a Vue instance. Can have multiple Vue instances, one per each div#aaa. Does that mean I can have one single main.js for the whole PHP app? For all the pages? This single main.js serving all the pages that use VueJS?
+63. Vuejs, mount the DOM element in the index.html that has the id of 'app' 
+64. Vuejs, render the 'compiled' template contained inside the App.vue file on top of that #app
+65. presence: optional. it is not related to the div#app in the <template>
+66. presence: optional
+67. this is the div where the application will be rendered
+68. Transpiler from ES6 to normal JS.

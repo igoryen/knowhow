@@ -58,7 +58,7 @@ myproject
         assets.json
     |lib| // #5
     |node_modules| // #9
-    |src| // #9
+    |(vue)src| // #9
         |build|
             webpack.config.js // #8
             ------------------------------------------------
@@ -68,7 +68,7 @@ myproject
                     if ( env.production )
                         process.env.NODE_ENV = 'production'; // #17
                     return {
-                        entry: './src/main.js', // #11
+                        entry: './vuesrc/main.js', // #11
                         output: {
                             path: path.resolve( __dirname, '../../assets' ), // #13
                             (A) filename: env.production ? 'js/main.min.js' : 'js/main.js' // #12
@@ -239,10 +239,10 @@ myproject
 
 ************************************
 // run webpack in development mode
-webpack-dev-server --config src/build/webpack.config.js
+webpack-dev-server --config vuesrc/build/webpack.config.js
 
 // build the production bundle
-webpack --config src/build/webpack.config.js --env.production
+webpack --config vuesrc/build/webpack.config.js --env.production
 
     --env.production // a flag
 
