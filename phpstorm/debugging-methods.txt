@@ -1,0 +1,19 @@
+# In the terminal
+	tail -f /mnt/file_archive/logs/poop.log
+# In the .php file
+	poop("test")
+	poop($_SERVER['REQUEST_URI'] . ' -- Loader.php');
+	poop($_SERVER['REQUEST_URI'] . " -- " . basename(__FILE__));
+
+	poop( (new DateTime())->format('Y-m-d H:i:s') . " - ".$_SERVER['REQUEST_URI'] . " - " . basename(__FILE__));
+
+	poop( (new DateTime())->format('Y-m-d H:i:s') . " - ".$_SERVER['REQUEST_URI'] . " - " . basename(__FILE__) . " > " . __FUNCTION__ . "()");
+
+	poop( (new DateTime())->format('H:i:s') . " - ".$_SERVER['REQUEST_URI'] . " - " . basename(__FILE__) . " > " . __FUNCTION__ . "()");
+
+# In the browser:
+	Refresh the page
+	See the "test" appear in the terminal
+
+
+ 
