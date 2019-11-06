@@ -13,6 +13,7 @@ git merge upstream/master
 	#
 	# Lines starting with '#' will be ignored, and an empty message aborts
 	# the commit.
+git push origin CX-5790-g
 
   -----------
 
