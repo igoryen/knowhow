@@ -1,0 +1,2 @@
+install the highlighter
+https://www.linkedin.com/pulse/blade-syntax-highlighting-laravel-sublime-text-naim-jeem/

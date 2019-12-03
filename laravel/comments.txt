@@ -25,7 +25,8 @@
 11. The command to use if you are on PHP 5.4+ and would like to use PHP's built-in development server.
 
 12. By default the HTTP-server will listen to port 8000. 
-    However if that port is already in use or you wish to serve multiple applications this way, 
+    However if that port is already in use 
+    or you wish to serve multiple applications this way, 
     you might want to specify what port to use.
 
 13. You may need to grant the web server write permissions to the app/storage directories
