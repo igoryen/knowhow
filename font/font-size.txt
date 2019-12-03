@@ -1,0 +1,94 @@
+NOT A good article.
+Percentage accumulates!
+
+https://varvy.com/mobile/legible-font-size.html
+
+
+
+
+
+Font size can use different unit of measures 
+- px, 
+- points
+- em
+- %
+
+Google 
+recommends 
+the following 
+when it comes to font and responsive design:
+
+
+
+1. Use a base font size of 16 CSS pixels. 
+	|| declare a font size for your page explicitly as 16px. 
+	|| use CSS to state a page wide instruction that the font size is 16px. This is usually done using "body" or "html". This also tells us to "adjust" our fonts (which is explained in the next point).
+
+2. Adjust the size as needed based on properties of the font being used.
+	
+
+3. Use sizes relative to the base size to define the typographic scale.
+	
+	body { font-size: 16px }
+	p { font-size: 120% }
+	h1 { font-size: 250% }
+
+	Now that we have a font size for the whole page, 
+	adjust that font size so our H1s and h2s etc. are appropriately larger than the base font size of 16 pixels.
+
+4. use the browser default line-height of 1.2em.
+	
+	The way Google is recommending to do this is "relative" to the base font size. For our examples we will use percentages to accomplish this.
+
+	In the above image we see that our H1 font-size is declared as "250%". This basically just means that our H1 text will be displayed two and half times bigger than our base size of 16px. This is the "relative" part. It means that wherever we declare a font size, it is always declared as bigger, smaller, or the same size as our base font size of 16px.
+
+	By doing this we are ensuring that no matter what size screen our page is seen on, our font size relationships will always stay the same. Our H1 will always be two and a half the size of our base font whether shown on the tiniest phone or the most gigantic TV screen.
+
+	This will also play an important part of making sure that font is easily readable (legible) when a user is viewing the page on mobile or smaller screens.
+
+5. Restrict the number of fonts used and the typographic scale: too many fonts and font sizes lead to messy and overly complex page layouts.
+
+
+
+
+
+line-height:
+
+	Google: 
+	use at least the browser default line-height of 1.2 
+	the space between the lines of text are at least 1.2 times the size of the text itself.
+
+	p {
+		font-size: 120%;
+		line-height: 1.2;
+	}
+
+List links
+	Links need more room on mobile devices,
+	ul{
+		line-height:200%;
+	}
+
+Devices
+	
+	html {
+		font-size: 100%;
+	} 
+	
+	@media(min-width:60em){
+		html {
+			font-size: 100%;
+		}
+	}
+
+	------------------------------
+
+	html {
+		font-size: 110%;
+	} 
+
+	@media(min-width:60em){
+		html { 
+			font-size: 90%;
+		}
+	}

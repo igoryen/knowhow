@@ -1,7 +1,50 @@
+
+
+
 # Server
 
     download XAMPP
+        PHP 7.* // 180430
     install XAMPP
+
+    start Apache
+        problem:
+
+
+
+            Port *** used by ***
+
+        Do:
+            v01
+                ---
+                netstat -ao
+
+                    Proto  Local Address          Foreign Address        State           PID
+                    TCP    0.0.0.0:80             NASCD158:0             LISTENING       1376
+
+                ---
+                Task Manager > Services > PID > 1376 rck > Stop serice
+
+            v02
+                ---
+                XAMPP Panel > Config > httpd.conf
+
+                old: Listen 80
+                new: Listne 8000
+
+                old: ServerName localhost:80
+                new: ServerName localhost:8000
+
+                ---
+                Skype: 
+
+        if another instance of Apache exists and running...
+
+            Start > type "Administrative tools" > Administrative tools clk > Services > Apache 2.4 > "Started"? > 
+
+
+
+
 
 # Download 
     download the most current version of the WP package. 
@@ -15,17 +58,34 @@
 
 ========================
 
-Create a new database
+# Create a new database
 
-- MySQL Workbench
-- Create a new Schema
-    Name: string01
-    Collation: utf8 - utf8_general_ci
-    "Apply"
+    - MySQL Workbench
 
-    Review
-        CREATE SCHEMA `ccs` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-    "Apply" > "Finish"
+        # download
+        # install
+            User: root@localhost
+            Pw:  //?
+
+            # Control Panel > System > Advanced > Environment variables > System variables > PATH > add "c:\xampp\mysql\bin\"
+            # XAMPP panel > MySQL > Start
+            # XAMPP panel > Shell > open > mysql -uroot
+            (... unfinished)
+
+
+            - Create a new Schema
+                Name: string01
+                Collation: utf8 - utf8_general_ci
+                "Apply"
+
+                Review
+                    CREATE SCHEMA `ccs` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+                "Apply" > "Finish"
+
+
+    
+
+    
 
 
 

@@ -1,0 +1,13 @@
+Gutenberg's rating is 2.3 out of 5.
+
+Not only developers, but merely writers hate it.
+
+	I’ve developed, hosted and curated WP-based sites for about 10 years now, both privately and professionally. I think I am at my seventh or eigth WP private installation (half of them offline again by now) , most of them over the years became heavily modified, i.e. lots of plugins, and a couple of code snipetts by yours truly.
+	I tested Gutenberg on two of them, which resulted in most pages being shredded to pieces. Yes, with some work & googling it was possible to restore some to a readable level. However, I am not putting dozends of hours into battling witha plugin I don’t need when I have content to make and write.
+
+	Bottom Line:
+	1. Guttenberg is a page builder by other name.
+	2. Guttenberg wants me to be busy with Guttenberg, instead of being busy with writing.
+	3. If I am busy thinking about font sizes, I am not busy thinking about the thoughts I want to express. Authors need to _write_, not to think in digestible “content” blocks designed to maximize redistributability, shareability, and monetarization.
+	4. Writing, Editing, Layouting and Marketing are four different processes of creating a page worth a read. Mashing them up into one makes you bad at all of them.
+

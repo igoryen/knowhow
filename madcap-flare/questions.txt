@@ -1,0 +1,18 @@
+Why does Flare add inline styling?
+
+Why does Flare add spans?
+	That's how it interprets styling done using the "Home > Font" not "Home > Styles".
+
+Why does Flare add <p>&#160;</p>?
+	That's how it interprets new lines in Word.
+
+Why does Flare create a stylesheet for each imported document?
+
+Why does Flare add classes like "Heading1_1_1", "p_11", "p_6"?
+
+How does flare create and name directories?
+
+What is a master page?
+	a template(?)
+
+xref = cross-reference

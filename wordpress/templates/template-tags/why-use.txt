@@ -1,0 +1,34 @@
+Why Use Template Tags 
+
+By encapsulating all of the code for a particular chunk of content, 
+template tags make it very easy 
+to include various pieces of a template 
+in a theme file 
+and also to maintain the theme.
+
+It is far easier to create one header.php file 
+and have all of your theme templates like 
+	single.php, 
+	page.php, 
+	front-page.php, 
+	etc. 
+reference that one theme file using get_header() 
+than copying and pasting the code into each theme file. 
+
+It also makes maintenance easier. 
+Whenever you make a change in your header.php file, 
+the change is automatically carried over into all of your other theme files.
+
+Another reason to use template tags is 
+to display dynamic data, i.e. data from the database. 
+In your header, 
+you could manually include the title tag, like so:
+
+<title>My Personal Website</title>
+
+However, 
+doing this means manually editing your theme any time you want to change the title of your website. 
+Instead, it’s easier to include the bloginfo( 'name' ) template tag, 
+which automatically fetch the site title from the database. 
+Now, you can change the title of your site in WordPress, 
+rather than having to hard code your theme templates.

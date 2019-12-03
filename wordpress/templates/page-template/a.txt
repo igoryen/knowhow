@@ -1,0 +1,18 @@
+
+https://developer.wordpress.org/themes/template-files-section/page-template-files/
+
+Page templates are a specific type of template file that can be applied to a specific page or groups of pages.
+
+Since a page template is a specific type of template file, here are some distinguishing features of page templates:
+
+Page templates are used to change the look and feel of a page.
+A page template can be applied to a single page, a page section, or a class of pages.
+
+Page templates generally have a high level of specificity, 
+targeting an individual page or group of pages. 
+For example, 
+a page template named page-about.php is more specific than the template files page.php or index.php 
+as it will only affect a page with the slug of “about.”
+
+If a page template has a template name, 
+WordPress users editing the page have control over what template will be used to render the page.

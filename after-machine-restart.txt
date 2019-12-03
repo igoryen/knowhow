@@ -21,4 +21,5 @@ After a machine restart:
 	- Free Commander
 
 # CLI
-	- Console (by Marko Bozikovic)
+	- ConEmu
+	- Console (by Marko Bozikovic) OLD

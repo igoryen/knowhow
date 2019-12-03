@@ -1,0 +1,17 @@
+What's a sitemap?
+
+
+Hey search engines, I have pages on my website you can crawl!
+Here's an XML file to help you crawl my site more intelligently 
+
+The site map lists
+	- URLs for your site
+	- additional imetadata about each URL
+		last updated dates
+		update frequency
+		level of importance 
+
+
+
+
+

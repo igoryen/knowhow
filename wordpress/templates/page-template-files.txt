@@ -1,0 +1,14 @@
+
+
+
+
+
+Page Templates within the Template Hierarchy #Page Templates within the Template Hierarchy
+When a person browses to your website, WordPress selects which template to use for rendering that page. As we learned earlier in the Template Hierarchy, WordPress looks for template files in the following order:
+
+Page Template — If the page has a custom template assigned, WordPress looks for that file and, if found, uses it.
+page-{slug}.php — If no custom template has been assigned, WordPress looks for and uses a specialized template that contains the page’s slug.
+page-{id}.php — If a specialized template that includes the page’s slug is not found, WordPress looks for and uses a specialized template named with the page’s ID.
+page.php — If a specialized template that includes the page’s ID is not found, WordPress looks for and uses the theme’s default page template.
+singular.php — If page.php is not found, WordPress looks for and uses the theme’s template used for a single post, irregardless of post type.
+index.php — If no specific page templates are assigned or found, WordPress defaults back to using the theme’s index file to render pages.

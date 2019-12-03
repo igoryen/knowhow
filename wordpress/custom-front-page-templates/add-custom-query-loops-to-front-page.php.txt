@@ -1,0 +1,22 @@
+Adding custom query loops to front-page.php
+
+If the front-page.php template file includes a default WordPress Loop, like so:
+
+<?php
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+    // do something
+endwhile; else:
+    // no posts found
+endif;
+
+That loop applies to the post content of the static page assigned to 'Settings > Reading ->Posts page'.
+
+To display custom loops (latest blog posts, custom/featured content, etc.), add secondary loop queries using calls to WP_Query. For example, to show the 3 latest blog posts:
+
+$latest_blog_posts = new WP_Query( array( 'posts_per_page' => 3 ) );
+
+if ( $latest_blog_posts->have_posts() ) : while ( $latest_blog_posts->have_posts() ) : $latest_blog_posts->the_post();
+    // Loop output goes here
+endwhile; endif;
+Pagination
+Static front pages are not intended to be paged. None of the WordPress Previous / Next page link functions work with a static front page. Pagination on a static front page uses the page query variable, not the paged variable. See the WP_Query for details.

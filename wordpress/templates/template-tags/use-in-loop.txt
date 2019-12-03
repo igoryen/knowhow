@@ -1,0 +1,44 @@
+Using Template Tags Within the Loop 
+
+Many template tags work within the WordPress Loop. 
+This means that they are included in the template files 
+as part of the php “loop” that generates the pages users see 
+based upon the instructions inside of the loop.
+
+The WordPress loop begins with:
+
+if ( have_posts() ) : 
+    while ( have_posts() ) : 
+        the_post(); 
+
+Template tags that work within the loop 
+must be in the middle area, 
+before the ending section of the loop below:
+
+    endwhile; 
+else :
+    _e( 'Sorry, no posts matched your criteria.', 'devhub' );
+endif;
+
+
+Some of template tags that need to be inside of the loop include
+
+	the_content()
+	the_excerpt()
+	next_post()
+	previous_post()
+
+
+The main reason why some functions require the loop 
+is because they require the global post object to be set.
+
+If the template tag you want to use doesn’t have to be within the loop
+
+	wp_list_cats()
+	wp_list_pages()
+
+then you can put it in any file you’d like, 
+for instance in the sidebar, header, or footer template files.
+
+These are functions that typically do not require the global post object.
+

@@ -1,0 +1,3 @@
+Settings > General 
+> Set Title: Fred Theme
+> Tagline: igoryen's theme of 180517

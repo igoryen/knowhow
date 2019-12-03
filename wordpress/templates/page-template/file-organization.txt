@@ -1,0 +1,14 @@
+File Organization of Page Templates 
+
+As discussed in Organizing Theme Files, 
+WordPress recognizes the subfolder "page-templates". 
+Therefore, 
+it’s a good idea to store your global page templates in this folder 
+to help keep them organized.
+
+Alert: 
+A specialized page template file 
+(those created for only one time use) 
+cannot be in a sub-folder, 
+nor, if using a Child Theme, 
+in the Parent Theme’s folder.

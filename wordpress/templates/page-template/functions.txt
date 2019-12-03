@@ -1,0 +1,21 @@
+Page Template Functions 
+
+These built-in WordPress functions and methods 
+can help you work with page templates:
+
+get_page_template() 
+	returns the path of the page template used to render the page.
+
+wp_get_theme()->get_page_templates() 
+	returns all custom page templates available to the currently active theme 
+	(get_page_templates() is a method of the WP_Theme class).
+
+is_page_template() 
+	returns true or false depending on whether a custom page template was used to render the page.
+
+get_page_template_slug() 
+	returns the value of custom field _wp_page_template (null when the value is empty or “default”).
+	If a page has been assigned a custom template, 
+	the filename of that template is stored as the value of a custom field named '_wp_page_template' (in the wp_postmeta database table). 
+	(Custom fields starting with an underscore 
+	do not display in the edit screen’s custom fields module.)

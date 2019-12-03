@@ -1,0 +1,29 @@
+Theme Template Files
+
+Developing Theme template files 
+that incorporate the static front page feature 
+requires understanding of the WordPress Template Hierarchy.
+
+On the site front page, 
+WordPress will always use the front-page.php template file, 
+if it exists. 
+
+If front-page.php does not exist, 
+WordPress will determine which template file to use, 
+depending on the user configuration of 
+'Settings > Reading ->Front page displays', 
+as follows:
+
+A static page: 
+	WordPress uses the Static Page template hierarchy: 
+	Custom Page Template, 
+	page-{id}.php, 
+	page-{slug}.php, 
+	page.php, 
+	index.php
+
+Your latest posts: 
+	WordPress uses the Blog Posts Index template hierarchy: 
+	home.php, 
+	index.php
+

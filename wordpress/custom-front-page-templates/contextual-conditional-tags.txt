@@ -1,0 +1,15 @@
+Contextual Conditional Tags
+
+is_front_page() 
+
+This Conditional Tag checks if 
+the site front page is being displayed. 
+Returns true when the site front page is being displayed, 
+regardless of whether 'Settings > Reading ->Front page displays' is set to "Your latest posts" or "A static page".
+
+is_home() 
+
+This Conditional Tag checks if 
+the blog posts index is being displayed. 
+Returns true when the blog posts index is being displayed: when the site front page is being displayed and 'Settings > Reading ->Front page displays' is set to "Your latest posts", or when 'Settings > Reading ->Front page displays' is set to "A static page" and the "Posts Page" value is the current Page being displayed.
+When the site front page is being displayed and 'Settings > Reading ->Front page displays' is set to "Your latest posts", both is_front_page() and is_home() will return true.

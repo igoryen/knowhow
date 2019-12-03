@@ -1,0 +1,37 @@
+https://www.cmscritic.com/flat-file-cms/
+https://www.ionos.com/digitalguide/hosting/cms/cms-without-database-a-useful-alternative/
+
+
+Automad	http://automad.org/
+50	BatFlat (SQLite)	https://batflat.org/	https://github.com/komputronika/batflat
+60	Bolt (uses SQLite?)	https://bolt.cm/
+CMXUno	https://github.com/boiteasite/cmsuno
+FlatCMS (paid)	https://www.flatcms.nl/
+08	FlexType	http://flextype.org/en	uses JSON
+12 GetSimple	http://get-simple.info/	uses XML
+Grav	http://getgrav.org/
+HTMLy (last update 2016)	https://www.htmly.com/
+Jekill (not a flat-file cms, site generator.)	https://jekyllrb.com/news/releases/
+Kirby (paid)	http://getkirby.com/
+50	Monstra	http://monstra.org/
+October	https://octobercms.com/
+Pico 	http://picocms.org/
+PluXml	https://github.com/pluxml/PluXml
+Pulse	https://www.pulsecms.com/
+razorCMS	http://www.razorcms.co.uk/
+Single	https://singlecms.com/
+SiteCake	https://sitecake.com/
+Statamic	https://statamic.com/
+Typesetter	http://www.typesettercms.com/
+WonderCMS	https://www.wondercms.com/
+
+
+
+content repository technology
+JCR
+Magnolia or Jahia
+
+
+
+
+

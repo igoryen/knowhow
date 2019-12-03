@@ -1,0 +1,14 @@
+http://www.wpbeginner.com/beginners-guide/how-to-add-titles-in-wordpress-menu-without-linking-to-a-page/
+
+
+Appearance > Menu > Custom links
+
+URL: #
+Label: Portal
+
+> Add to menu > Save
+
+> "Menu structure" DDL > "Portal" > 
+> URL: your link
+
+> Save menu

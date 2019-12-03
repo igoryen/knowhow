@@ -1,0 +1,96 @@
+https://www.dummies.com/computers/operating-systems/windows-xp-vista/how-e-mail-works/
+
+
+A message is composed on a computer by using an email program: a client. 
+
+
+The email program combines 
+the text you wrote (the body) 
+with 
+the recipient, 
+subject, 
+date, and 
+time (the header).
+
+Your email program (the client) then sends the message off 
+to an email server 
+by using SMTP (the Simple Message Transfer Protocol).
+
+The email server is basically 
+a program running on another computer. 
+For most people, 
+the computer is located at your Internet service provider, 
+or ISP.
+
+At the server, 
+the message is dissected and 
+the recipients culled // отбирается (как скот), срывается (как цветы)
+from the message’s To, Cc, and Bcc fields in the header. 
+The SMTP server then finds the host computer for the recipients. 
+For example, 
+if the message is being sent to billg@microsoft.com, 
+the server looks up microsoft.com 
+and sends the message off to that computer.
+
+For a few nanoseconds, 
+the message hops around the Internet 
+as it makes the connection to the destination computer.
+
+At the destination computer, 
+another SMTP server fetches the message 
+and stuffs it into a mailbox for the intended user. 
+There, it sits and waits until the user logs in to collect mail. 
+But the mailbox on the server 
+isn’t the same thing as the inbox in your PC’s mail program.
+
+The recipient’s mail program collects new messages from his ISP’s server. 
+The mail program uses 
+the Post Office Protocol (POP) to fetch the message. 
+POP is used instead of SMTP 
+because the email message is no longer being sent on the Internet; 
+it has arrived. 
+All the POP does is 
+- fetch the message waiting on the server and 
+- transfer it back to the user’s computer and his email program.
+
+After the mail messages are on the recipient’s computer, 
+they’re stored in a database. 
+Secretly, 
+all email programs are database programs. 
+After your messages are received, 
+they exist in various mailboxes 
+organized by your email program: 
+Inbox, Deleted Items, and Junk, for example.
+
+The email methods described here 
+don’t apply to email systems at large organizations, 
+such as Lotus Notes or Microsoft Exchange.
+
+In addition to POP 
+is the Internet Message Access Protocol (IMAP) method of reading email. Unlike POP, 
+IMAP doesn’t delete messages from the user’s mailbox on the server 
+until the user deletes the message. 
+Web-based email programs, 
+such as Gmail and Hotmail,
+often prefer IMAP.
+
+Your email is stored on the ISP’s computer 
+until you pick it up. 
+Unless you retrieve those messages, 
+your mailbox on the ISP’s mail server 
+continues to fill up 
+until it’s so bloated 
+that no more messages can be received.
+
+Most ISPs 
+limit the size of your mailbox. 
+Additionally, 
+your account may have size limits on individual messages, 
+which often can’t be larger than 5 or 10 megabytes. 
+Contact your ISP for specifics.
+
+When your mailbox gets full, 
+the ISP bounces any new email you might receive. 
+The message is returned to the sending SMTP computer, 
+but the sender may not receive a notice 
+that the message has bounced.

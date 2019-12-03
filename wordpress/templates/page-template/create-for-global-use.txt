@@ -1,0 +1,63 @@
+Creating Custom Page Templates for Global Use
+
+Sometimes you’ll want a template 
+that can be used globally by any page, or by multiple pages.  
+Some developers will group their templates with a filename prefix, 
+such as page_two-columns.php
+
+Alert:  
+Important! 
+Do not use "page-" as a prefix, 
+as WordPress will interpret the file as a specialized template, 
+meant to apply to only one page on your site.
+
+For information on theme file-naming conventions and filenames you cannot use, 
+see reserved theme filenames.
+
+Tip: 
+A quick, safe method for creating a new page template 
+is to make a copy of page.php 
+and give the new file a distinct filename. 
+That way, 
+you start off with the HTML structure of your other pages 
+and you can edit the new file as needed.
+
+To create a global template, 
+write an opening PHP comment at the top of the file 
+that states the template’s name.
+
+
+<?php /* Template Name: Example Template */ ?>
+ 
+
+It’s a good idea to choose a name that describes what the template does 
+as the name is visible to WordPress users 
+when they are editing the page. 
+For example, 
+you could name your template 
+Homepage, Blog, or Portfolio.
+
+This example from the TwentyFourteen theme 
+creates a page template called Full Width Page:
+
+<?php
+/**
+ * Template Name: Full Width Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+
+
+once you upload the file to your theme’s folder (e.g., page-templates), 
+go to the Page > Edit screen 
+in your admin dashboard.
+
+On the right hand side 
+under "attributes" 
+you’ll see "template".  
+This is where users are able 
+to access your global page templates.
+
+The select list has a maximum width of 250px, so longer names may be cut off.

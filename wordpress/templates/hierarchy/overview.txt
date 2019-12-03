@@ -1,0 +1,36 @@
+The Template File Hierarchy
+
+Overview 
+
+WordPress uses the query string 
+to decide which template or set of templates 
+should be used to display the page. 
+
+The query string is information 
+that is contained in the link to each part of your website. 
+It comes after the initial question mark 
+and may contain a number of parameters separated by ampersands.
+
+Put simply, 
+WordPress searches down through the template hierarchy 
+until it finds a matching template file. 
+To determine which template file to use, 
+WordPress:
+
+	# Matches every query string to a query type 
+		to decide which page is being requested 
+		(for example, a search page, a category page, etc);
+	
+	# Selects the template in the order determined by the template hierarchy;
+	
+	# Looks for template files with specific names in the current theme’s directory 
+		and uses the first matching template file as specified by the hierarchy.
+
+With the exception of the basic index.php template file, 
+you can choose whether you want to implement a particular template file or not.
+
+If WordPress cannot find a template file with a matching name, 
+it will skip to the next file in the hierarchy. 
+If WordPress cannot find any matching template file, 
+the theme’s index.php file will be used.
+

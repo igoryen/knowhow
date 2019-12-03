@@ -1,0 +1,10 @@
+Installation if MultiSite:
+
+v1: 
+	# unpack your Divi.zip 
+	# move it to: {your installation} > wp-content > themes > 	
+	# My Sites > Network Admin > Themes > Divi > Network Enable
+	# My Sites > {your sub-site} > Dashboard > Appearance > Themes > Divi > Activate
+
+v2: // didn't work
+	Desired Site > Appearance > Themes > Add New > Upload Theme > Choose File

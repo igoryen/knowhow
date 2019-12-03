@@ -1,0 +1,10 @@
+added home icon, black, home.png
+built
+added home icon white, replaced the black one, now have home.png only white
+	an updated home.png
+the old one doesn't exist anymore, but the editor still shows home.png black
+	the white icon is there too, but named home_1.png
+
+	The imbecil renames stuff for me!!!
+
+It does things correctly only after a build.

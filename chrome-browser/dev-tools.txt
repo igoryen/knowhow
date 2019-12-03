@@ -1,0 +1,4 @@
+Ctrl+Shift+I
+	open the Dev Tools
+
+sandwich > More tools > Coverage

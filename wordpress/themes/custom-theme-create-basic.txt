@@ -1,0 +1,15 @@
+# Create minimal files:
+
+	wp-content/themes/mytheme/
+		style.css
+		index.php
+
+# Add content
+
+	1) html
+	2) css
+
+
+# Dashboard > Appearance > Themes > Fred > Hover > Activate
+
+http://localhost/ihusacnx/

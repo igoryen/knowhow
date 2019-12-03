@@ -1,0 +1,6 @@
+1. optional. If absent, the default is .src/index.js
+2. "Hey webpack compiler, when you come across a path that resolves to a '.txt' file inside of a require()/import statement, use the "raw-loader" to transform it BEFORE you add it to the bundle."
+3. to access built-in plugins
+4. installed via npm
+5. the html-webpack-plugin generates an HTML file for your application by injecting automatically all your generated bundles.
+6. By setting the mode parameter to either development, production or none, you can enable webpack's built-in optimizations that correspond to each environment. The default value is production.
