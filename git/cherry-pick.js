@@ -1,3 +1,4 @@
+git checkout develop
 git fetch upstream
 git checkout -b CX-5556-d upstream/develop
 git cherry-pick 4945a8b92cfa782199ed4b46546ec7593f302b70
