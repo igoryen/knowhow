@@ -160,7 +160,7 @@ i18n (aka "g11n")
 						- APIs (To handle multiple locales)
 
 					Designing A Localizable UI
-					
+
 						Most of the UI errors in translation are in connection with the text. 
 						Translated text may take up less space or more, 
 						leading to your design appearing crowded or spread out.
@@ -184,7 +184,9 @@ i18n (aka "g11n")
 						externalizing all user-visible strings to a file, 
 						typically referred to as an external resource file. 
 						During l10n, 
-						you will end up with multiple versions of these external resource files, 
+						you will end up with 
+						multiple versions 
+						of these external resource files, 
 						one for every locale.
 
 						For example, 
@@ -218,14 +220,17 @@ https://www.lionbridge.com/blog/translation-l10n/l10n-g11n-i18n-whats-the-differ
 
 	Products intended for use by speakers of multiple languages 
 	typically undergo an i18n process. 
+	
 	For example, 
-	IKEA internationalizes the assembly instructions for its furniture 
-	by using only diagrams and illustrations, 
-	without including any text that would need to be translated. 
-	Products with instructions that do require translation 
-	are still often written with the goal of being as culturally-neutral as possible. 
-	This, of course, is easier said than done.
-
+	----------------
+		IKEA internationalizes the assembly instructions for its furniture 
+		by using only diagrams and illustrations, 
+		without including any text that would need to be translated. 
+		Products with instructions that do require translation 
+		are still often written 
+		with the goal of being as culturally-neutral as possible. 
+		This, of course, is easier said than done.
+	-----------------------------
 
 	In the case of software products and electronics, 
 	i18n involves a number of different concerns:
@@ -291,7 +296,8 @@ i18n is a g11n Task
 	internationalizing an app means it’s designed so that 
 	a change in such things as different time formats and currencies won’t affect its functionality.
 
-	When an app or site has been designed internationally, you’re halfway there to full g11n.
+	When an app or site has been designed internationally, 
+	you’re halfway there to full g11n.
 
 ==============================
 https://en.wikipedia.org/wiki/i18n_and_l10n
@@ -394,7 +400,8 @@ Engineering
 	Thus to get an application to support multiple languages 
 	one would design the application to select the relevant language resource file at runtime. 
 
-	The code required to manage data entry verification and many other locale-sensitive data types 
+	The code required to manage data entry verification 
+	and many other locale-sensitive data types 
 	also must support differing locale requirements. 
 	Modern development systems and operating systems 
 	include sophisticated libraries 
@@ -406,7 +413,8 @@ Engineering
 	require more profound changes in the software 
 	than text translation. 
 
-	For example, OpenOffice.org achieves this with compilation switches.
+	For example, 
+	OpenOffice.org achieves this with compilation switches.
 
 
 
@@ -421,44 +429,56 @@ Engineering
 	3) quality assurance.
 
 	To some degree (e.g. for quality assurance), 
-	development teams include someone who handles the basic/central stages of the process 
+	development teams include 
+	someone who handles the basic/central stages of the process 
 	which then enable all the others.
 
 	Such persons typically understand foreign languages and cultures 
 	and have some technical background. 
 
-	Specialized technical writers are required to construct a culturally appropriate syntax 
+	Specialized technical writers are required 
+	to construct a culturally appropriate syntax 
 	for potentially complicated concepts, 
 	coupled with engineering resources 
 	to deploy and test the l10n elements.
 
 	Once properly internationalized, 
 	software can rely on more decentralized models for l10n: 
-	free and open source software usually rely on self-l10n by end-users and volunteers, 
+	free and open source software 
+	usually rely on self-l10n by end-users and volunteers, 
 	sometimes organized in teams.
 	
 	The KDE3 project, for example, 
-	has been translated into over 100 languages;
-	MediaWiki in 270 languages, of which 100 mostly complete as of 2016.
+	-----------------
+		has been translated into over 100 languages;
+		MediaWiki in 270 languages, of which 100 mostly complete as of 2016.
+	-----------------
 
 	When translating existing text to other languages, 
-	it is difficult to maintain the parallel versions of texts throughout the life of the product.
+	it is difficult to maintain the parallel versions of texts 
+	throughout the life of the product.
 	For instance, 
-	if a message displayed to the user is modified, 
-	all of the translated versions must be changed.
-
+	--------------------
+		if a message displayed to the user is modified, 
+		all of the translated versions must be changed.
+	--------------------
 .......
 	Commercial considerations
 
 	In a commercial setting, 
 	the benefit from l10n is access to more markets. 
-	In the early 1980s, 
-	Lotus 1-2-3 took two years to separate program code and text 
-	and lost the market lead in Europe over Microsoft Multiplan. 
-	MicroPro found that using an Austrian translator for the West German market 
-	caused its WordStar documentation to, an executive said, 
-	not "have the tone it should have had".
 
+	e.g.
+	---------------
+		In the early 1980s, 
+		Lotus 1-2-3 took two years to separate program code and text 
+		and lost the market lead in Europe over Microsoft Multiplan. 
+
+		MicroPro found that 
+		using an Austrian translator for the West German market 
+		caused its WordStar documentation to, an executive said, 
+		not "have the tone it should have had".
+	--------------------
 	However, 
 	there are considerable costs involved, 
 	which go far beyond engineering. 
@@ -472,6 +492,7 @@ Engineering
 	sales, marketing and technical support 
 	must also facilitate their own operations in the new languages, 
 	in order to support customers for the localized products. 
+	
 	Particularly for relatively small language populations, 
 	it may never be economically viable 
 	to offer a localized product. 

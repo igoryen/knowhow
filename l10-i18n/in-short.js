@@ -1,14 +1,20 @@
-You have to localize in order to internationalize.
-First localize then internationalize.
-l10n is step 1, i18n is step 2.
-l10n is planning, i18n is implementing.
-l10n leads i18n.
+You have to internationalize in order to localize.
+First internationalize then localize.
+i18n is step 1, l10n is step 2.
+i18n is planning, l10n is implementing.
+i18n leads l10n.
 
 the product MUST be internationalized
 so that it can be localized.
 
 i18n is the gun, l10n is the bullets.
-A polyglot is a person who is i18nized from birth and can easily localize himself.
+
+E.g.
+-----------
+	A polyglot is a person 
+	who is i18nized from birth 
+	and can easily localize himself.
+-----------------
 
 If you want to globalize your work
 you need to internationalize your product
@@ -26,10 +32,7 @@ Externalize them ALL!
 
 - external resource files
 
-Netflix
-g11n = export its services
-i18n = add functionality to switch subtitles and audio
-l10n = create subtitles and audio 
+
 
 g11n = what your goal is
 i18n = the technical part
@@ -38,7 +41,8 @@ l10n = content authors part
 the process of i18n.
 
 IKEA
-i18n = no text, just pictures
+i18n excludes l10n? 
+= no text, just pictures
 
 2 options:
 make it culturally-neutral
@@ -58,31 +62,7 @@ Take these steps in their order:
 The 2 processes:
 	i18n and l10n
 
-McDonalds has gone global
-it embraced g11n
-it exports to 100 countries
-the 2 processes are happening in it.
 
-Elements it has internationalized
-	- menus
-		localized for Israel (kosher)
-		localized for China (spicy)
-		localized for India (vegan)
-	- work schedules
-		localized for Israel (closed on special days)
-
-Pixar has gone global
-Elements it has internationalized:
-	video 
-		- localized the character reading motion ("Inside Out") for RTL countries (Israel, Arabsphere, Arab states)
-
-Apple has gone global:
-Elements it has internationalized:
-	Siri-s 
-		~ its language (language or language variant (AmE, GBE, AuE, NZE))
-		~ conventions it uses in its speech
-			- temperature scales - l10n: recalculation between F and C 
-			- systems of measurements - l10n: recalculation between metric, imperial etc.
 
 i18n = exportabilization, make X exportable.
 
@@ -100,11 +80,7 @@ partly.
 its appearance it not localized.
 its speech is localized.
 
-i18n
-Browsers
-are internationalized
-they are made to display all kinds of stuff 
-no matter the locale
+
 
 ====
 g11n is a strategy of planning
@@ -163,28 +139,33 @@ i.e. a catalog of "messages" (strings)
 
 Functionalities to internationalize:
 --------------------------------------
-	- date and time format
-	- decimal separator (periods, commas)
-	- currency
-	- calendar
-	- images and icons
-	- enabling the use of Unicode
-	- ensuring the proper handling of legacy character encodings where appropriate
-	- avoiding dependance in code of user-interface string values, etc
-	- identify locale (by url or by headers)
-	- number formats
-	- date and time formats, 
-	- local calendars, 
-	- number formats and numeral systems, 
-	- sorting and presentation of lists, 
-	- handling of personal names and forms of address, etc.
-	- language switcher (in the header)
-	- strings of text 
-	- images with text on top
-	- text expansion: layout to provide space when needed
-	- make some elements culturally-neutral
+
+	- avoiding dependance in code on user-interface string values, etc
+	- Data encoding (use Unicode)
 	- DB update to provide for Unicode chars
-	- text directionality
+	- documentation, 
+	- encoding 1: enabling the use of Unicode
+	- encoding 2: ensuring the proper handling of legacy character encodings where appropriate
+	- format of input fields for address: ability to make the postal code field optional to address countries that do not have postal codes or the state field for countries that do not have states, plus the introduction of new registration flows that adhere to local laws are just some of the examples that make i18n a complex project.[15][16]
+	- format of input fields for addresses: field length for street addresses, 
+	- format of input fields for calendars (locale-dependent)
+	- format of input fields for currency
+	- format of input fields for date and time
+	- format of input fields for names - handling of personal names and forms of address, etc.
+	- format of input fields for number and numeral systems, 
+	- format of input fields for numbers: decimal separator (periods, commas)
+	- graphics: images and icons
+	- graphics: images with text on top
+	- hardware device support, 
+	- lists - sorting and presentation of lists, 
+	- locale identify: (by url or by headers)
+	- locale switcher (in the header) (language)
+	- graphics: make some elements culturally-neutral
+	- message catalogs
+	- show/hide | add/or remove | input fields depending on locale (patronymic (Rus), decimal (Yen))
+	- text directionality (Hebrew, Arabic, Taiwan)
+	- UI provide for text expansion: layout to provide space when needed
+	- user interaction
 --------------------------------------
 
 
@@ -197,10 +178,44 @@ Elements of i18n
 Examples from commerce
 ------------------------
 	- Amazon
+	- Apple
+		Elements it has internationalized:
+			Siri-s 
+				~ its language (language or language variant (AmE, GBE, AuE, NZE))
+				~ conventions it uses in its speech
+					- temperature scales - l10n: recalculation between F and C 
+					- systems of measurements - l10n: recalculation between metric, imperial etc.
 	- Facebook
 	- IKEA
+		culturally-neutal (images)
 	- McDonalds
+		it embraced g11n
+		it exports to 100 countries
+		the 2 processes are happening in it.
+
+		Elements it has internationalized
+			- menus
+				localized for Israel (kosher)
+				localized for China (spicy)
+				localized for India (vegan)
+			- work schedules
+				localized for Israel (closed on special days)
 	- Netflix
+		Netflix
+		g11n = export its services
+		i18n = add functionality to switch subtitles and audio
+		l10n = create subtitles and audio 
+	- Pixar
+		Elements it has internationalized:
+			video 
+				- localized the character reading motion ("Inside Out") for RTL countries (Israel, Arabsphere, Arab states)
+	- Browsers
+		i18n
+		Browsers
+		are internationalized
+		they are made to display all kinds of stuff 
+		no matter the locale
+
 ------------------------
 
 Kinds of products:
@@ -217,3 +232,11 @@ Concept
 	i18n is done once
 	l10n is repeated for every locale (e.g. localize it for Mexico)
 ----------------------
+
+1. internationalize (i.e. prepare for localization)
+2. localize
+
+"Message catalog" - The storage for translatable and translated strings aka "messages" 
+
+
+Maintaining parallel versions of text

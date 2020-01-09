@@ -20,7 +20,8 @@ Goals:
 	---------------------------
 		When i18n is a fundamental strategy from the onset, 
 		it guides crucial decision making, 
-		such as picking a CMS with tools to manage a variety of content streams 
+		such as picking a CMS 
+		with tools to manage a variety of content streams 
 		and making sure all your tools and software can talk to each other. 
 		Not to mention, 
 		i18n ensures that your product is sturdy and versatile 
@@ -29,7 +30,8 @@ Goals:
 		l10n needs a platform 
 		that is flexible and scalable enough 
 		to host all of your stakeholders and indefinite growth. 
-		The ideal scenario is when these various systems 
+		The ideal scenario is 
+		when these various systems 
 		integrate seamlessly together 
 		and management is largely automated.
 
@@ -88,17 +90,20 @@ l10n vs i18n: Get the Best Outcome
 	so we can understand the next steps clearly. 
 	But the reality is that l10n and i18n 
 	are particularly complicated. 
-	You must have a comprehensive understanding of your markets around the world
+	You must have a comprehensive understanding 
+	of your markets around the world
 	— at least, someone on your team needs to. 
 	You need to be able to 
 	- anticipate problems before they arise, 
 	- adapt to cultural surprises, 
 	- rely on sophisticated systems for automation. 
+	
 	We’re not just talking about a one-time translation. 
 	Any updates will need to be rolled out across all of your localized products, 
 	and the day will come when you’ll want to expand into even more foreign markets.
 
-	You need a guide and a partner on this journey full of twists and tongues. 
+	You need a guide and a partner 
+	on this journey full of twists and tongues. 
 	i18n and l10n are your new frontier. 
 	Make sure you’re always ready to say, “Yes,” to what lies ahead.
 
@@ -119,7 +124,8 @@ l10n vs i18n: Get the Best Outcome
 		you can perform l10n multiple times, 
 		for various locales. 
 		An internationalized product 
-		can be easily localized, without any errors and with minimal overhead.
+		can be easily localized, 
+		without any errors and with minimal overhead.
 
 
 ---------------
